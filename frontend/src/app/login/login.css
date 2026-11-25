@@ -1,0 +1,27 @@
+/* Login surface — page mesh + CTA; video panel styles are inline/token classes */
+
+.ps-login-mesh {
+  background:
+    radial-gradient(
+      ellipse 80% 60% at 10% 20%,
+      color-mix(in srgb, var(--ps-primary) 18%, transparent),
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 70% 50% at 90% 10%,
+      color-mix(in srgb, var(--ps-secondary) 14%, transparent),
+      transparent 50%
+    ),
+    linear-gradient(
+      165deg,
+      var(--ps-p-slate-50) 0%,
+      var(--ps-p-teal-50) 50%,
+      var(--ps-p-slate-100) 100%
+    );
+}
+
+.ps-login-cta-glow {
+  box-shadow:
+    0 1px 0 color-mix(in srgb, var(--ps-p-white) 35%, transparent) inset,
+    0 12px 32px color-mix(in srgb, var(--ps-primary) 28%, transparent);
+}

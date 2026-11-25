@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"error":"#ba1a1a","secondary-fixed":"#abefe8","surface-tint":"#006a63","on-primary-fixed":"#00201d","tertiary-container":"#007954","on-error":"#ffffff","primary-fixed-dim":"#80d5cb","on-secondary-fixed-variant":"#00504b","secondary-fixed-dim":"#8fd3cc","inverse-primary":"#80d5cb","secondary-container":"#a8ece5","on-surface-variant":"#3e4947","surface-bright":"#f7f9fb","on-secondary-container":"#266d68","on-primary-container":"#a3faef","on-tertiary-container":"#99ffce","surface-container-high":"#e6e8ea","primary":"#005c55","tertiary":"#005e40","surface-container-lowest":"#ffffff","surface-dim":"#d8dadc","on-error-container":"#93000a","tertiary-fixed":"#85f8c4","surface-container-low":"#f2f4f6","on-secondary":"#ffffff","on-background":"#191c1e","on-tertiary-fixed":"#002114","inverse-surface":"#2d3133","inverse-on-surface":"#eff1f3","on-tertiary":"#ffffff","on-tertiary-fixed-variant":"#005137","surface-variant":"#e0e3e5","surface-container":"#eceef0","primary-container":"#0f766e","surface-container-highest":"#e0e3e5","error-container":"#ffdad6","outline":"#6e7977","surface":"#f7f9fb","outline-variant":"#bdc9c6","background":"#f7f9fb","tertiary-fixed-dim":"#68dba9","on-surface":"#191c1e","secondary":"#216963","primary-fixed":"#9cf2e8","on-primary-fixed-variant":"#00504a","on-secondary-fixed":"#00201e","on-primary":"#ffffff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter":"1rem","space-xl":"2rem","space-sm":"0.5rem","space-lg":"1.5rem","space-md":"1rem","gutter-lg":"1.5rem","margin":"1.5rem","margin-mobile":"1rem","space-xs":"0.25rem"},fontFamily:{"label-md":["Inter"],"label-sm":["Inter"],"headline-sm":["Inter"],"body-sm":["Inter"],"label-lg":["Inter"],"body-lg":["Inter"],"headline-md":["Inter"],"title-md":["Inter"],"headline-xl":["Inter"],"data-tabular":["Inter"],"body-md":["Inter"],"headline-lg":["Inter"]},fontSize:{"label-md":["0.75rem",{"lineHeight":"1rem","fontWeight":"500"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","fontWeight":"500"}],"headline-sm":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"600"}],"body-sm":["0.75rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.625rem","fontWeight":"400"}],"headline-md":["1.25rem",{"lineHeight":"1.875rem","fontWeight":"600"}],"title-md":["1rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"headline-xl":["2rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"data-tabular":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"headline-lg":["1.5rem",{"lineHeight":"2.25rem","letterSpacing":"-0.01em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed right-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between border-l border-surface-container-high"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between border-b border-surface-container-high"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[20px]">local_pharmacy</span></div><div><span class="font-headline-sm text-headline-sm text-primary font-bold leading-none block">فارما استاک</span><span class="font-label-sm text-label-sm text-on-surface-variant block mt-1">مدیریت بالینی انبار</span></div></div></div><nav class="p-space-sm space-y-1 overflow-y-auto max-h-[calc(100vh-140px)]" data-active-classes="bg-primary-container text-on-primary font-semibold"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg transition-colors bg-primary-container text-on-primary font-semibold" data-path="dashboard-statistics" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>داشبورد و آمار</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="inventory-catalog" href="#"><span class="material-symbols-outlined text-[20px]">medication</span><span>لیست و موجودی</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="expiration-shortage-alerts" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">warning</span><span>هشدارهای انقضا و کسری</span></div><span class="px-1.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-data-tabular">۱۲</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="stock-inbound-invoices" href="#"><span class="material-symbols-outlined text-[20px]">input</span><span>ورود و رسید فاکتور</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="dispatch-sales-transfer" href="#"><span class="material-symbols-outlined text-[20px]">output</span><span>حواله خروج و فروش</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="physical-inventory-audit" href="#"><span class="material-symbols-outlined text-[20px]">inventory</span><span>شمارش و انبارگردانی</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="reports-financials" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span>گزارش‌ها و مالی</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="branch-management" href="#"><span class="material-symbols-outlined text-[20px]">domain</span><span>مدیریت شعب</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="system-settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>تنظیمات</span></a></nav></div><div class="p-space-sm border-t border-surface-container-high bg-surface-container-low"><div class="flex items-center justify-between px-space-sm py-space-xs"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant">وضعیت سامانه</span><span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span>برخط و همگام</span></div><a class="text-on-surface-variant hover:text-error transition-colors p-1.5 rounded-lg hover:bg-surface-container-high" data-path="login" href="#" title="خروج از حساب کاربری"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pr-64"><header class="fixed top-0 right-64 left-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 border-b border-surface-container-high px-gutter-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="relative flex items-center"><button class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-2 rounded-lg border border-surface-container-high text-on-surface hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-primary text-[20px]">store</span><span class="font-title-md text-title-md font-semibold">داروخانه دکتر حسینی (مرکزی)</span><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></button></div><div class="relative hidden lg:flex items-center w-80"><span class="material-symbols-outlined absolute right-3 text-on-surface-variant text-[20px]">search</span><input class="w-full pr-10 pl-16 py-2 bg-surface-container-lowest rounded-lg border border-surface-container-high text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" placeholder="جستجو بر اساس IRC ،UID یا نام دارو..." type="text"/><span class="absolute left-2.5 px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-data-tabular border border-outline-variant">⌘K</span></div></div><div class="flex items-center gap-space-md"><button class="hidden sm:flex items-center gap-space-xs px-space-md py-2 bg-primary text-on-primary rounded-lg hover:bg-primary-container transition-all shadow-sm font-label-lg text-label-lg active:scale-95" type="button"><span class="material-symbols-outlined text-[20px]">add_circle</span><span>ثبت داروی جدید</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error flex items-center justify-center font-label-sm text-[10px] font-data-tabular">۵</span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-left hidden md:block"><span class="font-title-md text-title-md font-semibold text-on-surface block leading-tight">دکتر رضایی</span><span class="font-label-sm text-label-sm text-on-surface-variant block">مسئول فنی انبار</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface w-full px-gutter-lg py-space-lg min-h-screen"><div class="flex flex-col w-full space-y-gutter-lg pb-space-xl">
+<!-- Top Operational Banner & Quick Actions -->
+<section class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col xl:flex-row xl:items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-primary-fixed flex items-center justify-center text-primary shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[32px]">monitor_heart</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold tracking-wide">پایگاه داده زنده انبار مرکزی</span>
+<span class="text-outline text-xs">/</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">ورژن ۴٫۲ پایش سلامت</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-extrabold leading-tight">
+          میز کار پایش و انبارداری دارویی
+        </h1>
+<div class="flex items-center gap-space-sm mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">calendar_today</span>
+<span class="font-data-tabular font-medium">امروز: پنجشنبه ۲۴ آبان ۱۴۰۳</span>
+<span class="text-outline-variant">•</span>
+<span class="font-data-tabular">نوبت کاری: عصر (شیفت فعال دکتر رضایی)</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Bar -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 bg-primary text-on-primary rounded-xl font-label-lg text-label-lg shadow-sm hover:bg-primary-container transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[20px]">prescriptions</span>
+<span>نسخه‌پیچی (POS)</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 bg-secondary-fixed text-on-secondary-fixed-variant rounded-xl font-label-lg text-label-lg shadow-sm hover:bg-secondary-container transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[20px]">post_add</span>
+<span>ثبت فاکتور خرید</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 bg-surface-container-high text-on-surface rounded-xl font-label-lg text-label-lg hover:bg-surface-container-highest transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[20px]">rule</span>
+<span>انبارگردانی فوری</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-xl font-label-lg text-label-lg transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[20px] text-tertiary">file_download</span>
+<span>خروجی اکسل روزانه</span>
+</button>
+</div>
+</section>
+<!-- 5 Distinct KPI Metric Cards -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-space-md">
+<!-- Card 1: Total Drug Items -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">کل اقلام دارویی فعال</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">medication</span>
+</div>
+</div>
+<div class="my-space-sm">
+<span class="font-headline-xl text-headline-xl text-on-surface font-black font-data-tabular">۳,۴۲۰</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">قلم ژنریک</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary bg-tertiary-fixed/30 w-fit px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+<span class="font-data-tabular">۱۲+ قلم جدید این ماه</span>
+</div>
+</div>
+<!-- Card 2: Active Batches -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">سری‌های ساخت (بَچ)</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+</div>
+</div>
+<div class="my-space-sm">
+<span class="font-headline-xl text-headline-xl text-on-surface font-black font-data-tabular">۴,۸۹۰</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">بَچ فعال در انبار</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant bg-surface-container w-fit px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px] text-secondary">inventory_2</span>
+<span class="font-data-tabular">توزیع در ۴ سالن و ۲۸ قفسه</span>
+</div>
+</div>
+<!-- Card 3: Near-Expiry Count -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">نزدیک به انقضا (<۹۰ روز)</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">history_toggle_off</span>
+</div>
+</div>
+<div class="my-space-sm">
+<span class="font-headline-xl text-headline-xl text-error font-black font-data-tabular">۱۴</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">قلم پرریسک</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high w-fit px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px] text-error">priority_high</span>
+<span class="font-data-tabular">ارزش: ۲۴۵,۰۰۰,۰۰۰ ریال</span>
+</div>
+</div>
+<!-- Card 4: Expired Count -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">منقضی‌شده (قرنطینه)</span>
+<div class="w-8 h-8 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">dangerous</span>
+</div>
+</div>
+<div class="my-space-sm">
+<span class="font-headline-xl text-headline-xl text-error font-black font-data-tabular">۸</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">ردیف مسدود</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-error-container bg-error-container/70 w-fit px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">block</span>
+<span>اقدام فوری امحا / برگشت</span>
+</div>
+</div>
+<!-- Card 5: Below-Reorder-Point Count -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">کسری و زیر نقطه سفارش</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">production_quantity_limits</span>
+</div>
+</div>
+<div class="my-space-sm">
+<span class="font-headline-xl text-headline-xl text-primary font-black font-data-tabular">۲۸</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">قلم بحرانی</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-primary font-semibold bg-primary-fixed/40 w-fit px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">shopping_cart_checkout</span>
+<span class="font-data-tabular">۱۰ پیش‌فاکتور در انتظار تأیید</span>
+</div>
+</div>
+</section>
+<!-- Multi-Stage Expiry Alert Panel (FEFO) -->
+<section class="flex flex-col space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">access_time_filled</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+            پایش چندمرحله‌ای انقضا و مدیریت ورود-خروج داروها (FEFO Matrix)
+          </h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            سیاست خروج اجباری بر اساس اولویت پایان تاریخ مصرف و تفکیک رنگی مناطق انبار
+          </span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md bg-surface-container-low px-space-md py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified_user</span>
+<span>سامانه تطبیق IRC با سامانه تیتک (TTAC)</span>
+</div>
+</div>
+<!-- 4 Tiers of FEFO -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Tier 1: Green (> 180 Days) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="font-title-md text-title-md font-bold text-on-surface">وضعیت پایدار و ایمن</span>
+</div>
+<span class="px-2 py-0.5 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm rounded-full font-bold">بیش از ۶ ماه</span>
+</div>
+<div class="flex items-baseline gap-1 my-space-sm">
+<span class="font-headline-lg text-headline-lg text-tertiary font-bold font-data-tabular">۳,۳۵۴</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ردیف بچ معتبر</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            اقلام با گردش مصرف استاندارد و بدون ریسک مالی تا نیمه دوم سال ۱۴۰۴.
+          </p>
+<div class="space-y-space-xs pt-space-xs">
+<div class="bg-surface-container-low p-2 rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">قرص استامینوفن ۵۰۰ داروپخش</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">بَچ: AP-8821 | انقضا: ۱۴۰۴/۱۰</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-tertiary font-data-tabular">۴۲۰ روز مانده</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">شربت دیفن هیدرامین الحاوی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">بَچ: DH-1104 | انقضا: ۱۴۰۴/۰۹</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-tertiary font-data-tabular">۳۸۵ روز مانده</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">کپسول آموکسی سیلین ۵۰۰ فارابی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">بَچ: AX-9930 | انقضا: ۱۴۰۴/۰۸</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-tertiary font-data-tabular">۳۵۰ روز مانده</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>پایش دوره‌ای: هفتگی</span>
+<span class="text-tertiary font-medium">سالم و در گردش عادی</span>
+</div>
+</div>
+<!-- Tier 2: Yellow (90 - 180 Days) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-title-md text-title-md font-bold text-on-surface">هشدار متوسط (فروش)</span>
+</div>
+<span class="px-2 py-0.5 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm rounded-full font-bold">۳ الی ۶ ماه</span>
+</div>
+<div class="flex items-baseline gap-1 my-space-sm">
+<span class="font-headline-lg text-headline-lg text-secondary font-bold font-data-tabular">۴۲</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ردیف نیازمند پایش</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            نیاز به اولویت‌دهی در پیشخوان و پرهیز از سفارش‌گذاری تا مصرف موجودی.
+          </p>
+<div class="space-y-space-xs pt-space-xs">
+<div class="bg-surface-container-low p-2 rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">قرص متفورمین ۵۰۰ آریا</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">بَچ: MF-302 | انقضا: ۱۴۰۴/۰۱</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-secondary font-data-tabular">۱۳۵ روز</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">قرص لوزارتان ۲۵ عبیدی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">بَچ: LZ-771 | انقضا: ۱۴۰۳/۱۲</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-secondary font-data-tabular">۱۱۰ روز</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">کپسول امپرازول ۲۰ زهراوی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">بَچ: OM-541 | انقضا: ۱۴۰۳/۱۲</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-secondary font-data-tabular">۹۸ روز</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between font-label-sm text-label-sm">
+<button class="text-secondary font-bold hover:underline flex items-center gap-1" type="button">
+<span>ارسال به ویترین فعال</span>
+<span class="material-symbols-outlined text-[14px]">arrow_back</span>
+</button>
+<span class="text-on-surface-variant font-data-tabular">۴۲ قلم</span>
+</div>
+</div>
+<!-- Tier 3: Orange (30 - 90 Days) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="font-title-md text-title-md font-bold text-on-surface">خروج فوری (FEFO)</span>
+</div>
+<span class="px-2 py-0.5 bg-primary-container text-on-primary font-label-sm text-label-sm rounded-full font-bold">۱ الی ۳ ماه</span>
+</div>
+<div class="flex items-baseline gap-1 my-space-sm">
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold font-data-tabular">۱۶</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ردیف اولویت اول خروج</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            صرفاً این سری ساخت‌ها برای بیماران و نسخ آزاد در سامانه فراخوانی شوند.
+          </p>
+<div class="space-y-space-xs pt-space-xs">
+<div class="bg-surface-container-low p-2 rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">قطره چشمی سیپروفلوکساسین</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">بَچ: CP-1002 | انقضا: ۱۴۰۳/۱۱/۲۰</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary font-data-tabular">۸۸ روز</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">قرص آتورواستاتین ۲۰ پورسینا</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">بَچ: AT-443 | انقضا: ۱۴۰۳/۱۱/۰۵</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary font-data-tabular">۷۲ روز</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">کپسول سفالکسین ۵۰۰ جابربن‌حیان</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">بَچ: CX-819 | انقضا: ۱۴۰۳/۱۰/۱۸</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary font-data-tabular">۵۵ روز</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">الزام اسکن بارکد UID</span>
+<span class="text-primary font-bold">اولویت حداکثری</span>
+</div>
+</div>
+<!-- Tier 4: Red (Expired or < 30 Days) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="font-title-md text-title-md font-bold text-error">بحرانی / توقف توزیع</span>
+</div>
+<span class="px-2 py-0.5 bg-error-container text-on-error-container font-label-sm text-label-sm rounded-full font-bold">منقضی یا <۳۰ روز</span>
+</div>
+<div class="flex items-baseline gap-1 my-space-sm">
+<span class="font-headline-lg text-headline-lg text-error font-bold font-data-tabular">۱۳</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(۸ منقضی + ۵ کمتر از ۳۰ روز)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            قفل سیستمی فعال است؛ هیچ نسخه‌ای اجازه ثبت این سری ساخت‌ها را ندارد.
+          </p>
+<div class="space-y-space-xs pt-space-xs">
+<div class="bg-error-container/40 p-2 rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md font-bold text-on-error-container block">ویال سفتریاکسون ۱ گرم جابر</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">بَچ: B702 | منقضی‌شده</span>
+</div>
+<button class="text-on-error bg-error px-2 py-1 rounded text-label-sm font-label-sm font-semibold hover:opacity-90 transition-opacity" type="button">
+                قرنطینه
+              </button>
+</div>
+<div class="bg-error-container/40 p-2 rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md font-bold text-on-error-container block">شربت اکسپکتورانت البرز</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">بَچ: EX-91 | انقضا: ۱۴۰۳/۰۹/۰۲</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-error font-data-tabular">۹ روز مانده</span>
+</div>
+<div class="bg-error-container/40 p-2 rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md font-bold text-on-error-container block">آمپول دگزامتازون کاسپین</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">بَچ: DX-04 | انقضا: ۱۴۰۳/۰۹/۱۰</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-error font-data-tabular">۱۷ روز مانده</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between font-label-sm text-label-sm">
+<button class="w-full py-1.5 bg-error text-on-error rounded-lg font-bold flex items-center justify-center gap-1 hover:bg-error/90 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">lock_reset</span>
+<span>انتقال دسته جمعی به انبار امحا</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Low Stock and Recent Activity Split Section -->
+<section class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- Left Heavy Column: Low Stock Table (8 Cols) -->
+<div class="xl:col-span-8 bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col justify-between">
+<div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">emergency</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">جدول اقلام کسری و زیر نقطه سفارش مجدد (ROP)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">فهرست داروهای راهبردی جهت ثبت سفارش خرید فوری به شرکت‌های پخش دارویی</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold font-data-tabular">۲۸ ردیف نیازمند شارژ</span>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<th class="py-2.5 px-space-md rounded-r-lg">ردیف</th>
+<th class="py-2.5 px-space-md">نام دارو و شکل دارویی</th>
+<th class="py-2.5 px-space-md">کد ژنریک / IRC</th>
+<th class="py-2.5 px-space-md text-center">موجودی فعلی</th>
+<th class="py-2.5 px-space-md text-center">نقطه سفارش</th>
+<th class="py-2.5 px-space-md text-center">کسری موردنیاز</th>
+<th class="py-2.5 px-space-md">وضعیت تأمین</th>
+<th class="py-2.5 px-space-md">شرکت پخش پیش‌فرض</th>
+<th class="py-2.5 px-space-md text-left rounded-l-lg">عملیات خرید</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high font-body-sm text-body-sm text-on-surface">
+<!-- Item 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md font-data-tabular text-on-surface-variant">۰۱</td>
+<td class="py-3 px-space-md">
+<div class="font-semibold text-on-surface">سرم رینگر ۱۰۰۰ میلی‌لیتر</div>
+<div class="text-[11px] text-on-surface-variant">محلول تزریقی بطری پلاستیکی - ثامن</div>
+</td>
+<td class="py-3 px-space-md font-data-tabular text-on-surface-variant text-xs">IRC-9481203</td>
+<td class="py-3 px-space-md text-center font-bold text-error font-data-tabular">۱۸ عدد</td>
+<td class="py-3 px-space-md text-center text-on-surface-variant font-data-tabular">۵۰</td>
+<td class="py-3 px-space-md text-center font-bold text-primary font-data-tabular">۳۲+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>کسری شدید
+                  </span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant">توزیع داروپخش</td>
+<td class="py-3 px-space-md text-left">
+<button class="px-2.5 py-1.5 bg-primary text-on-primary rounded-lg text-label-sm font-label-sm font-medium hover:bg-primary-container transition-colors shadow-sm" type="button">
+                    سفارش به پخش
+                  </button>
+</td>
+</tr>
+<!-- Item 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md font-data-tabular text-on-surface-variant">۰۲</td>
+<td class="py-3 px-space-md">
+<div class="font-semibold text-on-surface">قلم انسولین لانتوس (سولواستار)</div>
+<div class="text-[11px] text-on-surface-variant">۱۰۰ واحد/میلی‌لیتر، یخچال ۲ الی ۸ درجه</div>
+</td>
+<td class="py-3 px-space-md font-data-tabular text-on-surface-variant text-xs">IRC-1120934</td>
+<td class="py-3 px-space-md text-center font-bold text-error font-data-tabular">۱۲ عدد</td>
+<td class="py-3 px-space-md text-center text-on-surface-variant font-data-tabular">۶۰</td>
+<td class="py-3 px-space-md text-center font-bold text-primary font-data-tabular">۴۸+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>سهمیه‌ای
+                  </span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant">رازی دارو (سانوفی)</td>
+<td class="py-3 px-space-md text-left">
+<button class="px-2.5 py-1.5 bg-primary text-on-primary rounded-lg text-label-sm font-label-sm font-medium hover:bg-primary-container transition-colors shadow-sm" type="button">
+                    سفارش به پخش
+                  </button>
+</td>
+</tr>
+<!-- Item 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md font-data-tabular text-on-surface-variant">۰۳</td>
+<td class="py-3 px-space-md">
+<div class="font-semibold text-on-surface">قرص وارفارین سدیم ۵ میلی‌گرم</div>
+<div class="text-[11px] text-on-surface-variant">جعبه ۱۰۰ عددی، داروی با حاشیه درمانی باریک</div>
+</td>
+<td class="py-3 px-space-md font-data-tabular text-on-surface-variant text-xs">IRC-4892019</td>
+<td class="py-3 px-space-md text-center font-bold text-error font-data-tabular">۵ جعبه</td>
+<td class="py-3 px-space-md text-center text-on-surface-variant font-data-tabular">۴۰</td>
+<td class="py-3 px-space-md text-center font-bold text-primary font-data-tabular">۳۵+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>در حال ثبت پیش‌فاکتور
+                  </span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant">پخش فردوس</td>
+<td class="py-3 px-space-md text-left">
+<button class="px-2.5 py-1.5 bg-surface-container-high text-on-surface rounded-lg text-label-sm font-label-sm font-medium hover:bg-surface-container-highest transition-colors" type="button">
+                    پیگیری سفارش
+                  </button>
+</td>
+</tr>
+<!-- Item 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md font-data-tabular text-on-surface-variant">۰۴</td>
+<td class="py-3 px-space-md">
+<div class="font-semibold text-on-surface">اسپری تنفسی سالمترول ۵۰ میکروگرم</div>
+<div class="text-[11px] text-on-surface-variant">سروفلو - ۱۲۰ پاف شرکت سیناژن</div>
+</td>
+<td class="py-3 px-space-md font-data-tabular text-on-surface-variant text-xs">IRC-7301928</td>
+<td class="py-3 px-space-md text-center font-bold text-on-surface font-data-tabular">۹ اسپری</td>
+<td class="py-3 px-space-md text-center text-on-surface-variant font-data-tabular">۳۰</td>
+<td class="py-3 px-space-md text-center font-bold text-primary font-data-tabular">۲۱+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                    زیر حد مجاز
+                  </span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant">پخش هجرت</td>
+<td class="py-3 px-space-md text-left">
+<button class="px-2.5 py-1.5 bg-primary text-on-primary rounded-lg text-label-sm font-label-sm font-medium hover:bg-primary-container transition-colors shadow-sm" type="button">
+                    سفارش به پخش
+                  </button>
+</td>
+</tr>
+<!-- Item 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md font-data-tabular text-on-surface-variant">۰۵</td>
+<td class="py-3 px-space-md">
+<div class="font-semibold text-on-surface">سرم دکستروز ۵ درصد ۵۰۰cc</div>
+<div class="text-[11px] text-on-surface-variant">سرم قندی شستشو و تزریق فرآورده‌های وریدی</div>
+</td>
+<td class="py-3 px-space-md font-data-tabular text-on-surface-variant text-xs">IRC-3928172</td>
+<td class="py-3 px-space-md text-center font-bold text-on-surface font-data-tabular">۲۴ عدد</td>
+<td class="py-3 px-space-md text-center text-on-surface-variant font-data-tabular">۷۰</td>
+<td class="py-3 px-space-md text-center font-bold text-primary font-data-tabular">۴۶+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+                    تأییدیه ویزیتور
+                  </span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant">توزیع داروپخش</td>
+<td class="py-3 px-space-md text-left">
+<button class="px-2.5 py-1.5 bg-primary text-on-primary rounded-lg text-label-sm font-label-sm font-medium hover:bg-primary-container transition-colors shadow-sm" type="button">
+                    سفارش به پخش
+                  </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="pt-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+          نمایش ۵ قلم از کل ۲۸ قلم کسری بحرانی
+        </span>
+<button class="flex items-center gap-1 font-label-lg text-label-lg text-primary font-bold hover:underline" type="button">
+<span>مشاهده و سفارش‌گذاری انبوه تمام ۲۸ قلم کسری</span>
+<span class="material-symbols-outlined text-[18px]">west</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Recent Activity Feed (4 Cols) -->
+<div class="xl:col-span-4 bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">notifications_active</span>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">خوراک رویدادهای زنده انبار</h3>
+</div>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<!-- Activity Timeline -->
+<div class="relative space-y-space-md pr-4">
+<!-- Timeline line -->
+<div class="absolute right-[7px] top-2 bottom-2 w-0.5 bg-surface-container-high"></div>
+<!-- Activity 1 -->
+<div class="relative flex items-start gap-space-sm">
+<div class="w-4 h-4 rounded-full bg-primary flex items-center justify-center -mr-[13px] z-10 flex-shrink-0 mt-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl w-full">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-bold text-primary">ورود فاکتور خرید #ف-۱۴۰۳/۸۹۱</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">۳۵ دقیقه پیش</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+                شرکت توزیع داروپخش؛ ۱۸ کارتن شامل اقلام آنتی‌بیوتیک با موفقیت اسکن UID و به قفسه A-04 منتقل شد.
+              </p>
+<div class="mt-2 text-[11px] text-on-surface-variant flex items-center gap-2">
+<span>توسط انباردار: محسنی</span>
+<span>•</span>
+<span class="text-tertiary font-medium">تطبیق تیتک ۱۰۰٪</span>
+</div>
+</div>
+</div>
+<!-- Activity 2 -->
+<div class="relative flex items-start gap-space-sm">
+<div class="w-4 h-4 rounded-full bg-secondary flex items-center justify-center -mr-[13px] z-10 flex-shrink-0 mt-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl w-full">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-bold text-secondary">نسخه‌پیچی نسخه #۹۸۲۳۴</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">۱ ساعت پیش</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+                صندوق شماره ۱ (بیمه سلامت)؛ کسر خودکار ۴ قلم داروی قلبی از بَچ‌های خروج اول (FEFO).
+              </p>
+<div class="mt-2 text-[11px] text-on-surface-variant flex items-center gap-2">
+<span>کاربر: خانم دکتر رحمانی</span>
+</div>
+</div>
+</div>
+<!-- Activity 3 -->
+<div class="relative flex items-start gap-space-sm">
+<div class="w-4 h-4 rounded-full bg-error flex items-center justify-center -mr-[13px] z-10 flex-shrink-0 mt-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+</div>
+<div class="bg-error-container/30 p-space-sm rounded-xl w-full">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-bold text-on-error-container">اخطار خودکار قرنطینه</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">۲ ساعت پیش</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+                انتقال ۲ قلم ویال منقضی (سفتریاکسون B702) از قفسه C-02 به باکس قرنطینه امحای سالن زیرزمین.
+              </p>
+<div class="mt-2 text-[11px] text-error font-medium">
+                سیستم: عدم صدور برگه ترخیص دارو
+              </div>
+</div>
+</div>
+<!-- Activity 4 -->
+<div class="relative flex items-start gap-space-sm">
+<div class="w-4 h-4 rounded-full bg-surface-container-highest flex items-center justify-center -mr-[13px] z-10 flex-shrink-0 mt-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant"></span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl w-full">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">تعدیل شمارش انبارگردانی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-tabular">دیروز ۱۸:۴۵</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+                شمارش فیزیکی ردیف B-12 انجام و اختلاف ۳ بسته سرم نرمال سالین با تأیید سوپروایزر ثبت شد.
+              </p>
+<div class="mt-2 text-[11px] text-on-surface-variant">
+                کد صورتجلسه: شمارش-۷۲
+              </div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm">
+<a class="w-full py-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-xl font-label-md text-label-md font-semibold flex items-center justify-center gap-1 transition-colors" href="#">
+<span>مشاهده تاریخچه کامل لاگ‌ها (Audit Trail)</span>
+<span class="material-symbols-outlined text-[16px]">history</span>
+</a>
+</div>
+</div>
+</section>
+</div></main></div></body></html>

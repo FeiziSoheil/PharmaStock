@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;font-family:'Vazirmatn',sans-serif;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed-dim":"#68dba9","secondary":"#216963","surface-container-lowest":"#ffffff","surface-container":"#eceef0","on-tertiary-container":"#99ffce","error":"#ba1a1a","on-error":"#ffffff","tertiary":"#005e40","secondary-fixed-dim":"#8fd3cc","on-primary-fixed-variant":"#00504a","inverse-primary":"#80d5cb","on-surface-variant":"#3e4947","primary-container":"#0f766e","surface-tint":"#006a63","secondary-fixed":"#abefe8","tertiary-fixed":"#85f8c4","secondary-container":"#a8ece5","on-secondary-fixed":"#00201e","surface-bright":"#f7f9fb","tertiary-container":"#007954","primary-fixed-dim":"#80d5cb","on-secondary-container":"#266d68","on-surface":"#191c1e","surface":"#f7f9fb","outline":"#6e7977","primary-fixed":"#9cf2e8","outline-variant":"#bdc9c6","on-tertiary-fixed-variant":"#005137","surface-variant":"#e0e3e5","on-primary-fixed":"#00201d","surface-container-highest":"#e0e3e5","surface-dim":"#d8dadc","primary":"#005c55","inverse-on-surface":"#eff1f3","on-secondary-fixed-variant":"#00504b","surface-container-low":"#f2f4f6","error-container":"#ffdad6","on-tertiary-fixed":"#002114","surface-container-high":"#e6e8ea","inverse-surface":"#2d3133","on-secondary":"#ffffff","on-primary":"#ffffff","background":"#f7f9fb","on-error-container":"#93000a","on-tertiary":"#ffffff","on-primary-container":"#a3faef","on-background":"#191c1e"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","gutter":"1rem","space-lg":"1.5rem","gutter-lg":"1.5rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem","margin":"1.5rem","space-xl":"2rem"},"fontFamily":{"headline-lg":["Vazirmatn","Inter"],"headline-md":["Vazirmatn","Inter"],"headline-xl":["Vazirmatn","Inter"],"headline-sm":["Vazirmatn","Inter"],"body-sm":["Vazirmatn","Inter"],"label-lg":["Vazirmatn","Inter"],"label-sm":["Vazirmatn","Inter"],"body-md":["Vazirmatn","Inter"],"body-lg":["Vazirmatn","Inter"],"title-md":["Vazirmatn","Inter"],"label-md":["Vazirmatn","Inter"],"data-tabular":["Vazirmatn","Inter"]},"fontSize":{"headline-lg":["1.5rem",{"lineHeight":"2.25rem","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-md":["1.25rem",{"lineHeight":"1.875rem","fontWeight":"600"}],"headline-xl":["2rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"600"}],"body-sm":["0.75rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"600"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"body-lg":["1rem",{"lineHeight":"1.625rem","fontWeight":"400"}],"title-md":["1rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"label-md":["0.75rem",{"lineHeight":"1rem","fontWeight":"500"}],"data-tabular":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"500"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface"><aside class="fixed right-0 top-0 h-full w-[260px] bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="p-space-md"><div class="flex items-center gap-space-sm pb-space-md border-b border-surface-container-highest"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[24px]">local_pharmacy</span></div><div><div class="font-headline-sm text-headline-sm text-primary">انبار دارو</div><div class="font-label-sm text-label-sm text-on-surface-variant">سامانه جامع موجودی داروخانه</div></div></div><nav class="mt-space-md space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-xl"><div class="font-label-sm text-label-sm text-outline px-space-sm pt-space-xs pb-space-xs uppercase">بخش اصلی</div><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">داشبورد و آمار کلان</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="catalog" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-body-md text-body-md">کاتالوگ دارو</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inventory" href="#"><span class="material-symbols-outlined text-[20px]">medication</span><span class="font-body-md text-body-md">لیست و موجودی داروها</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="alerts" href="#"><span class="material-symbols-outlined text-[20px]">notification_important</span><span class="font-body-md text-body-md">هشدارهای انقضا و کسری</span></a><div class="font-label-sm text-label-sm text-outline px-space-sm pt-space-md pb-space-xs uppercase">عملیات انبارداری</div><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="receipts" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-md text-body-md">ورود و رسید فاکتور</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="outbound" href="#"><span class="material-symbols-outlined text-[20px]">output</span><span class="font-body-md text-body-md">حواله خروج و فروش</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="audit" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-body-md text-body-md">شمارش و انبارگردانی</span></a><div class="font-label-sm text-label-sm text-outline px-space-sm pt-space-md pb-space-xs uppercase">گزارش‌ها و تنظیمات</div><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-body-md text-body-md">گزارش‌های دوره‌ای و مالی</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="branches" href="#"><span class="material-symbols-outlined text-[20px]">store</span><span class="font-body-md text-body-md">مدیریت شعب و انبارها</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md text-body-md">تنظیمات سامانه</span></a></nav></div><div class="p-space-md border-t border-surface-container-highest bg-surface-bright"><div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-lowest border border-surface-container-highest"><div class="flex items-center gap-space-xs"><span class="w-2.5 h-2.5 rounded-full bg-tertiary-container animate-pulse"></span><div><div class="font-label-md text-label-md text-on-surface">شعبه مرکزی</div><div class="font-label-sm text-label-sm text-on-surface-variant">فعال و آنلاین</div></div></div><button class="text-primary hover:text-on-surface transition-colors p-1"><span class="material-symbols-outlined text-[18px]">swap_horiz</span></button></div><div class="flex items-center justify-between mt-space-sm px-space-xs"><span class="font-label-sm text-label-sm text-outline">سیستم لجستیک دارویی</span><span class="font-data-tabular text-data-tabular text-outline">نسخه ۲.۴.۰</span></div></div></aside><div class="pr-[260px]"><header class="fixed top-0 right-[260px] left-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-xl border border-surface-container-highest cursor-pointer"><span class="material-symbols-outlined text-primary text-[20px]">local_pharmacy</span><span class="font-label-lg text-label-lg text-on-surface">داروخانه دکتر حسینی (مرکزی)</span><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div><div class="relative w-96"><span class="material-symbols-outlined absolute right-space-sm top-2.5 text-outline text-[20px]">search</span><input class="w-full h-10 pr-10 pl-16 rounded-xl bg-surface-bright border border-surface-container-highest font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:border-primary" placeholder="جستجوی نام دارو، کد ژنریک، بارکد یا شناسه IRC..." type="text"/><span class="absolute left-space-xs top-2 px-1.5 py-0.5 rounded bg-surface-container text-outline font-label-sm text-label-sm">Ctrl+K</span></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary px-space-md h-10 rounded-xl font-label-lg text-label-lg transition-colors"><span class="material-symbols-outlined text-[20px]">add_circle</span><span>ثبت داروی جدید</span></button><button class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-label-sm flex items-center justify-center">۴</span></button><div class="flex items-center gap-space-sm pl-space-xs border-r border-surface-container-highest pr-space-md"><div class="text-left"><div class="font-label-lg text-label-lg text-on-surface">دکتر رضایی</div><div class="font-label-sm text-label-sm text-primary">مسئول فنی داروخانه</div></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrAE8Vz1cvoPdg9e9JyLvxyzuEgt4Zk_ccaGJDQoZ41r3IfozLnxa-dB5rCCgiOlvD9JkrfLNig6_fM0iBmy_WbfFWiUIko7VAj9lTBOT40v-riGSDWdHplafFGB-n7K7cU5aXrJDCHRrgJhloCaxWbSdBlX50IRzK0iOIeXmjV8KjH50895j5F7XMKZhN4fBsJ65J437oxpvwR4NC2BbmfZXHQVeo4iRwPLoJNCBbL6"/></div></div></header><main class="w-full pt-16 bg-surface min-h-screen px-gutter-lg py-space-lg"><div class="flex flex-col w-full space-y-space-lg">
+<!-- Top Breadcrumb & Action Navigation -->
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-sm rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="hover:text-primary cursor-pointer transition-colors">مدیریت داروخانه</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_left</span>
+<span class="hover:text-primary cursor-pointer transition-colors">کاتالوگ دارو</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_left</span>
+<span class="text-on-surface font-label-lg text-label-lg font-bold">جزئیات فرآورده: قرص متفورمین ۵۰۰ میلی‌گرم</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-colors font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+<span>بازگشت به لیست کاتالوگ دارو</span>
+</button>
+<div class="h-4 w-px bg-surface-container-highest"></div>
+<button class="p-1.5 rounded-lg hover:bg-surface-container-high text-outline hover:text-on-surface transition-colors" title="راهنما و پروتکل FEFO">
+<span class="material-symbols-outlined text-[20px]">help_outline</span>
+</button>
+</div>
+</div>
+<!-- Drug Header Profile Hero -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="p-space-lg flex flex-col xl:flex-row gap-space-lg items-start xl:items-center justify-between">
+<!-- Right: Main Title & Clinical Brand Details -->
+<div class="flex items-start gap-space-md max-w-3xl">
+<div class="w-20 h-20 rounded-xl bg-secondary-container/40 flex-shrink-0 flex items-center justify-center text-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[44px]">medication</span>
+</div>
+<div class="space-y-space-xs">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="bg-primary-container/10 text-primary-container px-2 py-0.5 rounded-full font-label-sm text-label-sm font-semibold">
+              داروی با نسخه (Rx)
+            </span>
+<span class="bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-full font-data-tabular text-label-sm">
+              ATC: A10BA02
+            </span>
+<span class="bg-tertiary-container/15 text-tertiary px-2 py-0.5 rounded-full font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              پروتکل ترخیص: FEFO فعال
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+            قرص متفورمین هیدروکلراید ۵۰۰ میلی‌گرم
+          </h1>
+<div class="font-label-md text-label-md text-outline font-data-tabular dir-ltr text-right" dir="ltr">
+            Metformin Hydrochloride 500mg Film-Coated Tablet
+          </div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 text-on-surface-variant font-body-sm text-body-sm pt-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>نام تجاری: <strong class="text-on-surface">گلوکوفاژ (Glucophage)</strong></span>
+</div>
+<span>•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">factory</span>
+<span>شرکت داروسازی داروپخش (تحت لیسانس Merck آلمان)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Left: Quick Action Panel -->
+<div class="flex flex-wrap xl:flex-col items-center xl:items-end gap-space-xs w-full xl:w-auto">
+<div class="flex items-center gap-space-xs w-full xl:w-auto">
+<button class="flex-1 xl:flex-initial flex items-center justify-center gap-1.5 bg-primary-container hover:bg-primary text-on-primary px-space-md py-2 rounded-lg font-label-lg text-label-lg transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add_box</span>
+<span>ثبت ورود سری ساخت (بچ) جدید</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="چاپ بارکد قفسه">
+<span class="material-symbols-outlined text-[20px]">print</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="ویرایش کاتالوگ">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+<div class="text-outline font-label-sm text-label-sm pt-1">
+          آخرین به‌روزرسانی مشخصات: امروز، ساعت ۰۹:۴۰
+        </div>
+</div>
+</div>
+<!-- Metadata Badges Strip -->
+<div class="px-space-lg py-space-sm bg-surface-container-low flex flex-wrap items-center gap-space-md text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">barcode</span>
+<span>کد IRC:</span>
+<span class="font-data-tabular font-bold text-on-surface">۱۲۲۸۰۱۴۵۶۲</span>
+</div>
+<div class="h-3 w-px bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">qr_code_2</span>
+<span>کد GTIN:</span>
+<span class="font-data-tabular font-bold text-on-surface">۰۶۲۶۰۱۴۵۸۹۲۳۴۱</span>
+</div>
+<div class="h-3 w-px bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">thermostat</span>
+<span>شرایط نگهداری:</span>
+<span class="text-on-surface">دمای معمول اتاق (۱۵ الی ۲۵ درجه سانتی‌گراد)</span>
+</div>
+<div class="h-3 w-px bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">shield</span>
+<span>طبقه قانونی:</span>
+<span class="text-on-surface">نسخه عادی (غیرمخدر / فاقد پوکه)</span>
+</div>
+</div>
+</div>
+<!-- Realtime Inventory Stock KPIs (Bento Matrix) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">موجودی فیزیکی قابل ترخیص</span>
+<div class="w-8 h-8 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">inventory_2</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface font-data-tabular">۱,۲۵۰</span>
+<span class="font-label-md text-label-md text-outline">جعبه ۱۰۰ عددی</span>
+</div>
+<div class="mt-2 flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-tertiary font-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            سطح موجودی مطلوب (ROP: ۳۰۰)
+          </span>
+<span class="font-data-tabular text-outline">۱۲۵,۰۰۰ عدد قرص</span>
+</div>
+<!-- Progress bar towards max capacity (2000 boxes) -->
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 62.5%"></div>
+</div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">ارزش ریالی سرمایه در گردش</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-container/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface font-data-tabular">۱۸۷,۵۰۰,۰۰۰</span>
+<span class="font-label-md text-label-md text-outline">ریال</span>
+</div>
+<div class="mt-2 flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant font-label-sm">میانگین خرید موزون:</span>
+<span class="font-data-tabular font-bold text-on-surface">۱۵۰,۰۰۰ ریال/جعبه</span>
+</div>
+<div class="text-outline font-label-sm text-label-sm mt-1">
+          حاشیه سود ناخالص مصوب: ۲۵٪ قانونی
+        </div>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">تعداد سری‌های ساخت فعال</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface font-data-tabular">۴</span>
+<span class="font-label-md text-label-md text-outline">سری ساخت (بچ فعال)</span>
+</div>
+<div class="mt-2 flex items-center gap-space-xs text-body-sm font-body-sm">
+<span class="px-1.5 py-0.5 rounded bg-tertiary-container/20 text-tertiary font-label-sm font-bold">۲ بچ سبز</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-container/40 text-secondary font-label-sm font-bold">۱ بچ نرمال</span>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-sm font-bold">۱ بچ احتیاط</span>
+</div>
+<div class="text-outline font-label-sm text-label-sm mt-2">
+          تفکیک در ۲ قفسه مجزا در انبار مرکزی
+        </div>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">نزدیک‌ترین موعد انقضا (FEFO)</span>
+<div class="w-8 h-8 rounded-lg bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">event_available</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl font-bold text-tertiary font-data-tabular">۱۴۰۴/۰۲/۱۵</span>
+<span class="font-label-md text-label-md text-tertiary">بچ M9041</span>
+</div>
+<div class="mt-2 flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant font-label-sm">مهلت تا انقضا:</span>
+<span class="font-data-tabular font-bold text-tertiary">۱۸ ماه مانده (ایمن)</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 85%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Interactive Navigation Tabs -->
+<div class="border-b border-surface-container-highest">
+<div class="flex items-center gap-space-md -mb-px">
+<button class="tab-button flex items-center gap-space-xs pb-space-sm px-space-xs font-title-md text-title-md font-bold text-primary-container border-b-2 border-primary-container transition-colors" id="tab-btn-batches" onclick="switchDrugTab('batches')">
+<span class="material-symbols-outlined text-[20px]">format_list_numbered</span>
+<span>بچ‌ها و سری‌های ساخت فعال</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container/10 text-primary-container font-label-sm text-label-sm">۴ سری</span>
+</button>
+<button class="tab-button flex items-center gap-space-xs pb-space-sm px-space-xs font-title-md text-title-md font-medium text-on-surface-variant hover:text-on-surface border-b-2 border-transparent transition-colors" id="tab-btn-cardex" onclick="switchDrugTab('cardex')">
+<span class="material-symbols-outlined text-[20px]">sync_alt</span>
+<span>گردش موجودی و کاردکس انبار</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">۴ تراکنش اخیر</span>
+</button>
+<button class="tab-button flex items-center gap-space-xs pb-space-sm px-space-xs font-title-md text-title-md font-medium text-on-surface-variant hover:text-on-surface border-b-2 border-transparent transition-colors" id="tab-btn-info" onclick="switchDrugTab('info')">
+<span class="material-symbols-outlined text-[20px]">clinical_notes</span>
+<span>اطلاعات فرآورده و شناسنامه بالینی</span>
+</button>
+</div>
+</div>
+<!-- TAB CONTENT 1: BATCHES & EXPIRY MANAGEMENT (DEFAULT ACTIVE) -->
+<section class="tab-pane flex flex-col space-y-space-md" id="tab-content-batches">
+<!-- Table Utilities & Filters -->
+<div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface ml-space-sm">فیلتر سریع سری‌ها:</span>
+<button class="px-3 py-1 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md">همه بچ‌ها (۴)</button>
+<button class="px-3 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md">دارای موجودی (۴)</button>
+<button class="px-3 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md">نزدیک انقضا (&lt; ۶ ماه)</button>
+<button class="px-3 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md">قرنطینه / مسدود شده (۰)</button>
+</div>
+<div class="flex items-center gap-space-xs justify-end">
+<div class="relative">
+<input class="bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm font-body-sm rounded-lg px-3 py-1.5 pl-8 focus:outline-none focus:bg-surface-container" placeholder="جستجوی شماره سری یا پالت..." type="text"/>
+<span class="material-symbols-outlined absolute left-2 top-2 text-[16px] text-outline">search</span>
+</div>
+<button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant" title="دریافت خروجی اکسل کاردکس بچ‌ها">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+<!-- Clinical Batches Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="py-3 px-space-md font-bold">شماره سری ساخت</th>
+<th class="py-3 px-space-md font-bold">تاریخ تولید</th>
+<th class="py-3 px-space-md font-bold">تاریخ انقضا (شمسی)</th>
+<th class="py-3 px-space-md font-bold text-left">قیمت خرید (ریال)</th>
+<th class="py-3 px-space-md font-bold text-left">قیمت مصرف‌کننده</th>
+<th class="py-3 px-space-md font-bold text-center">حاشیه سود</th>
+<th class="py-3 px-space-md font-bold">موجودی فیزیکی</th>
+<th class="py-3 px-space-md font-bold">محل در انبار</th>
+<th class="py-3 px-space-md font-bold">وضعیت FEFO</th>
+<th class="py-3 px-space-md font-bold text-center">عملیات</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-md text-body-md text-on-surface">
+<!-- Row 1: Priority 1 FEFO -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary" title="بچ فعال دارای تقدم ترخیص"></span>
+<span class="font-data-tabular font-bold text-on-surface">M9041</span>
+<span class="text-label-sm font-label-sm text-outline font-data-tabular">(پخش هجرت)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-data-tabular text-on-surface-variant">۱۴۰۱/۰۸/۱۵</td>
+<td class="py-3.5 px-space-md">
+<div class="font-data-tabular font-bold text-tertiary">۱۴۰۴/۰۲/۱۵</div>
+<div class="font-label-sm text-label-sm text-outline">۱۸ ماه باقی‌مانده</div>
+</td>
+<td class="py-3.5 px-space-md text-left font-data-tabular font-semibold">۱۲۰,۰۰۰</td>
+<td class="py-3.5 px-space-md text-left font-data-tabular font-bold text-primary">۱۵۰,۰۰۰</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container font-data-tabular font-bold text-label-sm text-on-surface-variant">۲۵٪</span>
+</td>
+<td class="py-3.5 px-space-md min-w-[170px]">
+<div class="flex items-baseline justify-between font-data-tabular text-body-sm mb-1">
+<span class="font-bold text-on-surface">۴۵۰ جعبه</span>
+<span class="text-outline text-label-sm">۳۶٪ کل انبار</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 36%"></div>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-label-md text-label-md text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-data-tabular font-medium text-on-surface">قفسه A-12 / رد ۳</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">priority_high</span>
+                  اولویت ۱ خروج (FEFO)
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary" title="مشاهده فاکتور ورود">
+<span class="material-symbols-outlined text-[18px]">receipt</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary" title="جابجایی قفسه / پالت">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-error" title="انتقال به قرنطینه">
+<span class="material-symbols-outlined text-[18px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Standard safe batch -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container" title="بچ فعال"></span>
+<span class="font-data-tabular font-bold text-on-surface">M9042</span>
+<span class="text-label-sm font-label-sm text-outline font-data-tabular">(پخش هجرت)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-data-tabular text-on-surface-variant">۱۴۰۲/۰۱/۲۰</td>
+<td class="py-3.5 px-space-md">
+<div class="font-data-tabular font-bold text-on-surface">۱۴۰۴/۰۷/۳۰</div>
+<div class="font-label-sm text-label-sm text-outline">۲۳ ماه باقی‌مانده</div>
+</td>
+<td class="py-3.5 px-space-md text-left font-data-tabular font-semibold">۱۲۰,۰۰۰</td>
+<td class="py-3.5 px-space-md text-left font-data-tabular font-bold text-primary">۱۵۰,۰۰۰</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container font-data-tabular font-bold text-label-sm text-on-surface-variant">۲۵٪</span>
+</td>
+<td class="py-3.5 px-space-md min-w-[170px]">
+<div class="flex items-baseline justify-between font-data-tabular text-body-sm mb-1">
+<span class="font-bold text-on-surface">۵۰۰ جعبه</span>
+<span class="text-outline text-label-sm">۴۰٪ کل انبار</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 40%"></div>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-label-md text-label-md text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-data-tabular font-medium text-on-surface">قفسه A-12 / رد ۴</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">done</span>
+                  ایمن (اولویت ۲)
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary" title="مشاهده فاکتور ورود">
+<span class="material-symbols-outlined text-[18px]">receipt</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary" title="جابجایی قفسه / پالت">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-error" title="انتقال به قرنطینه">
+<span class="material-symbols-outlined text-[18px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Fresh Batch -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary" title="بچ فعال"></span>
+<span class="font-data-tabular font-bold text-on-surface">P8810</span>
+<span class="text-label-sm font-label-sm text-outline font-data-tabular">(پخش رازی)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-data-tabular text-on-surface-variant">۱۴۰۲/۰۴/۱۰</td>
+<td class="py-3.5 px-space-md">
+<div class="font-data-tabular font-bold text-on-surface">۱۴۰۵/۰۱/۱۵</div>
+<div class="font-label-sm text-label-sm text-outline">۲۹ ماه باقی‌مانده</div>
+</td>
+<td class="py-3.5 px-space-md text-left font-data-tabular font-semibold">۱۲۲,۰۰۰</td>
+<td class="py-3.5 px-space-md text-left font-data-tabular font-bold text-primary">۱۵۲,۵۰۰</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container font-data-tabular font-bold text-label-sm text-on-surface-variant">۲۵٪</span>
+</td>
+<td class="py-3.5 px-space-md min-w-[170px]">
+<div class="flex items-baseline justify-between font-data-tabular text-body-sm mb-1">
+<span class="font-bold text-on-surface">۲۰۰ جعبه</span>
+<span class="text-outline text-label-sm">۱۶٪ کل انبار</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 16%"></div>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-label-md text-label-md text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-data-tabular font-medium text-on-surface">قفسه B-04 / رد ۱</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">hourglass_empty</span>
+                  انبارش ذخیره (اولویت ۳)
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary" title="مشاهده فاکتور ورود">
+<span class="material-symbols-outlined text-[18px]">receipt</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary" title="جابجایی قفسه / پالت">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-error" title="انتقال به قرنطینه">
+<span class="material-symbols-outlined text-[18px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Small Residual Batch -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-outline" title="بچ رو به اتمام"></span>
+<span class="font-data-tabular font-bold text-on-surface">K7702</span>
+<span class="text-label-sm font-label-sm text-outline font-data-tabular">(پخش فردوس)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-data-tabular text-on-surface-variant">۱۴۰۱/۰۶/۰۱</td>
+<td class="py-3.5 px-space-md">
+<div class="font-data-tabular font-bold text-on-surface">۱۴۰۴/۰۴/۳۰</div>
+<div class="font-label-sm text-label-sm text-outline">۲۰ ماه باقی‌مانده</div>
+</td>
+<td class="py-3.5 px-space-md text-left font-data-tabular font-semibold">۱۱۸,۰۰۰</td>
+<td class="py-3.5 px-space-md text-left font-data-tabular font-bold text-primary">۱۴۷,۵۰۰</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container font-data-tabular font-bold text-label-sm text-on-surface-variant">۲۵٪</span>
+</td>
+<td class="py-3.5 px-space-md min-w-[170px]">
+<div class="flex items-baseline justify-between font-data-tabular text-body-sm mb-1">
+<span class="font-bold text-on-surface">۱۰۰ جعبه</span>
+<span class="text-outline text-label-sm">۸٪ کل انبار</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-outline h-full rounded-full" style="width: 8%"></div>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-label-md text-label-md text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-data-tabular font-medium text-on-surface">قفسه A-12 / رد ۱</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                  رو به اتمام
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary" title="مشاهده فاکتور ورود">
+<span class="material-symbols-outlined text-[18px]">receipt</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary" title="جابجایی قفسه / پالت">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-error" title="انتقال به قرنطینه">
+<span class="material-symbols-outlined text-[18px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Summary Footer -->
+<div class="p-space-md bg-surface-container-low/50 flex flex-col md:flex-row items-center justify-between text-body-sm font-body-sm text-on-surface-variant gap-space-sm">
+<div class="flex items-center gap-space-md">
+<span>مجموع بچ‌های محاسبه شده: <strong class="text-on-surface font-data-tabular">۴ سری</strong></span>
+<span>جمع کل موجودی عددی: <strong class="text-on-surface font-data-tabular">۱,۲۵۰ جعبه</strong></span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span>ترتیب چیدمان خروج طبق استانداردهای سازمان غذا و داروی ایران بر اساس کمترین تاریخ انقضا (FEFO) اولویت‌بندی شده است.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- TAB CONTENT 2: STOCK AUDIT & CARDEX (TOGGLEABLE) -->
+<section class="tab-pane hidden flex-col space-y-space-md" id="tab-content-cardex">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">کاردکس انبار و ثبت رویدادهای فیزیکی</h2>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">ثبت خودکار کلیه اسناد ورود، خروج با نسخه، حواله توزیع و اصلاحات انبارگردانی</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>فیلتر بازه زمانی</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>پرینت کاردکس رسمی</span>
+</button>
+</div>
+</div>
+<!-- Cardex Movement Log Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<th class="py-3 px-space-md">نوع سند / شماره مرجع</th>
+<th class="py-3 px-space-md">زمان و تاریخ ثبت</th>
+<th class="py-3 px-space-md">سری ساخت (بچ)</th>
+<th class="py-3 px-space-md text-center">ورود (+)</th>
+<th class="py-3 px-space-md text-center">خروج (-)</th>
+<th class="py-3 px-space-md text-center">مانده نهایی انبار</th>
+<th class="py-3 px-space-md">کاربر ثبت‌کننده / شیفت</th>
+<th class="py-3 px-space-md">توضیحات و مستندات</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-md text-body-md text-on-surface">
+<!-- Event 1 -->
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-error-container/40 text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">point_of_sale</span>
+</span>
+<div>
+<div class="font-data-tabular font-bold text-on-surface">خروج نسخه POS #۹۸۲۳۴۱</div>
+<div class="font-label-sm text-label-sm text-outline">فروش به بیمار نسخه‌ای</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md font-data-tabular text-on-surface-variant">امروز، ۱۱:۲۵</td>
+<td class="py-3 px-space-md font-data-tabular font-bold text-on-surface">M9041</td>
+<td class="py-3 px-space-md text-center font-data-tabular text-outline">-</td>
+<td class="py-3 px-space-md text-center font-data-tabular font-bold text-error">۱۰ جعبه</td>
+<td class="py-3 px-space-md text-center font-data-tabular font-bold text-on-surface">۱,۲۵۰ جعبه</td>
+<td class="py-3 px-space-md">دکتر رضایی (مسئول فنی)</td>
+<td class="py-3 px-space-md text-label-sm text-outline">ثبت با نسخه بیمه سلامت تأمین اجتماعی</td>
+</tr>
+<!-- Event 2 -->
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-tertiary-container/30 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">inventory</span>
+</span>
+<div>
+<div class="font-data-tabular font-bold text-on-surface">ورود فاکتور خرید #ف-۱۴۰۳/۸۸۲</div>
+<div class="font-label-sm text-label-sm text-outline">تأمین‌کننده: پخش هجرت</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md font-data-tabular text-on-surface-variant">دیروز، ۱۴:۱۰</td>
+<td class="py-3 px-space-md font-data-tabular font-bold text-on-surface">M9042</td>
+<td class="py-3 px-space-md text-center font-data-tabular font-bold text-tertiary">+۵۰۰ جعبه</td>
+<td class="py-3 px-space-md text-center font-data-tabular text-outline">-</td>
+<td class="py-3 px-space-md text-center font-data-tabular font-bold text-on-surface">۱,۲۶۰ جعبه</td>
+<td class="py-3 px-space-md">انباردار (کابلی)</td>
+<td class="py-3 px-space-md text-label-sm text-outline">تایید زنجیره سرد و سلامت فیزیکی کارتن‌ها</td>
+</tr>
+<!-- Event 3 -->
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+</span>
+<div>
+<div class="font-data-tabular font-bold text-on-surface">حواله توزیع به بخش #۸۸۱۲</div>
+<div class="font-label-sm text-label-sm text-outline">مقصد: درمانگاه اورژانس سینا</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md font-data-tabular text-on-surface-variant">۳ روز پیش</td>
+<td class="py-3 px-space-md font-data-tabular font-bold text-on-surface">M9041</td>
+<td class="py-3 px-space-md text-center font-data-tabular text-outline">-</td>
+<td class="py-3 px-space-md text-center font-data-tabular font-bold text-error">۵۰ جعبه</td>
+<td class="py-3 px-space-md text-center font-data-tabular font-bold text-on-surface">۷۶۰ جعبه</td>
+<td class="py-3 px-space-md">صادقی (لجستیک)</td>
+<td class="py-3 px-space-md text-label-sm text-outline">درخواست کتبی سرپرستار شیفت شب</td>
+</tr>
+<!-- Event 4 -->
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-secondary-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+</span>
+<div>
+<div class="font-data-tabular font-bold text-on-surface">تعدیل مثبت انبارگردانی دوره‌ای</div>
+<div class="font-label-sm text-label-sm text-outline">ممیزی فصل پاییز</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md font-data-tabular text-on-surface-variant">هفته گذشته</td>
+<td class="py-3 px-space-md font-data-tabular font-bold text-on-surface">K7702</td>
+<td class="py-3 px-space-md text-center font-data-tabular font-bold text-tertiary">+۵ جعبه</td>
+<td class="py-3 px-space-md text-center font-data-tabular text-outline">-</td>
+<td class="py-3 px-space-md text-center font-data-tabular font-bold text-on-surface">۸۱۰ جعبه</td>
+<td class="py-3 px-space-md">کمیته شمارش انبار</td>
+<td class="py-3 px-space-md text-label-sm text-outline">کسری ثبت نشده ناشی از استرداد مرجوعی بخش</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- TAB CONTENT 3: CLINICAL & REGULATORY PROFILE (TOGGLEABLE) -->
+<section class="tab-pane hidden flex-col space-y-space-md" id="tab-content-info">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Pharmacology & Drug Spec Card -->
+<div class="lg:col-span-2 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center gap-space-xs border-b border-surface-container pb-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[24px]">science</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">شناسنامه داروشناسی و فرمولاسیون</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-1">
+<span class="text-outline font-label-sm text-label-sm">شکل و فرم دارویی</span>
+<div class="font-title-md text-title-md font-semibold text-on-surface">قرص روکش‌دار (Film-Coated)</div>
+<div class="text-label-sm text-on-surface-variant dir-ltr text-right" dir="ltr">Film-Coated Tablet</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-1">
+<span class="text-outline font-label-sm text-label-sm">قدرت و دوز مؤثر ماده مؤثره</span>
+<div class="font-title-md text-title-md font-semibold text-on-surface font-data-tabular">۵۰۰ میلی‌گرم هیدروکلراید</div>
+<div class="text-label-sm text-on-surface-variant">تک جزئی (فاقد ترکیب ثانویه)</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-1">
+<span class="text-outline font-label-sm text-label-sm">بسته‌بندی رسمی و واحد توزیع</span>
+<div class="font-title-md text-title-md font-semibold text-on-surface">جعبه حاوی ۱۰ بلیستر ۱۰ عددی</div>
+<div class="text-label-sm text-on-surface-variant">مجموع ۱۰۰ عدد قرص در جعبه نهایی</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-1">
+<span class="text-outline font-label-sm text-label-sm">رده درمانی بالینی (Pharmacological Class)</span>
+<div class="font-title-md text-title-md font-semibold text-on-surface">کاهنده قند خون (بیگوآنیدها)</div>
+<div class="text-label-sm text-on-surface-variant">Oral Antidiabetic - Biguanides</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-1 sm:col-span-2">
+<span class="text-outline font-label-sm text-label-sm">پروتکل فارماکوپه و نگهداری استاندارد</span>
+<div class="font-body-md text-body-md text-on-surface mt-1">
+              در دمای کمتر از ۳۰ درجه سانتی‌گراد، در محیط خشک با رطوبت نسبی کمتر از ۶۰ درصد، دور از تابش مستقیم آفتاب و یخ‌زدگی نگهداری شود.
+            </div>
+</div>
+</div>
+<div class="pt-space-sm border-t border-surface-container">
+<span class="font-label-lg text-label-lg font-bold text-on-surface block mb-space-xs">ملاحظات توزیع و بالینی داروخانه:</span>
+<ul class="list-disc list-inside space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<li>تجویز جهت درمان دیابت نوع ۲ و اختلالات سندرم تخمدان پلی‌کیستیک (PCOS).</li>
+<li>عدم نیاز به دفترچه ثبت سموم و داروهای تحت کنترل (پوکه تحویلی ندارد).</li>
+<li>نیاز به بررسی سطح کراتینین بیمار در زمان توزیع دوره‌ای داروخانه‌ای.</li>
+</ul>
+</div>
+</div>
+<!-- Warehouse Logistics & Inventory Safety Boundaries -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-xs border-b border-surface-container pb-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">warehouse</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">پارامترهای لجستیک و انبار</h2>
+</div>
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-label-md text-label-md text-on-surface-variant">نقطه سفارش مجدد (ROP):</span>
+<span class="font-data-tabular font-bold text-on-surface">۳۰۰ جعبه</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-label-md text-label-md text-on-surface-variant">حداکثر سقف مجاز انبار:</span>
+<span class="font-data-tabular font-bold text-on-surface">۲,۰۰۰ جعبه</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-label-md text-label-md text-on-surface-variant">حجم باکس حمل کارتن مادر:</span>
+<span class="font-data-tabular font-bold text-on-surface">۵۰ جعبه در هر کارتن</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-label-md text-label-md text-on-surface-variant">دوره گردش انبار (Inventory Turn):</span>
+<span class="font-data-tabular font-bold text-tertiary">۲۱ روز (عالی)</span>
+</div>
+</div>
+</div>
+<!-- Supplier Info box -->
+<div class="p-space-sm rounded-xl bg-surface-container space-y-space-xs">
+<span class="font-label-sm text-label-sm text-outline font-bold">توزیع‌کننده انحصاری فعال:</span>
+<div class="font-label-lg text-label-lg font-bold text-on-surface">شرکت توزیع داروپخش / پخش هجرت</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center justify-between">
+<span>شماره قرارداد تأمین:</span>
+<span class="font-data-tabular">۱۲-۸۹-DPX</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function switchDrugTab(targetTab) {
+    // Hide all tab panes
+    const panes = document.querySelectorAll('.tab-pane');
+    panes.forEach(pane => {
+      pane.classList.add('hidden');
+      pane.classList.remove('flex');
+    });
+
+    // Reset tab button states
+    const buttons = document.querySelectorAll('.tab-button');
+    buttons.forEach(btn => {
+      btn.classList.remove('text-primary-container', 'border-primary-container');
+      btn.classList.add('text-on-surface-variant', 'border-transparent');
+    });
+
+    // Activate the targeted tab
+    const targetPane = document.getElementById('tab-content-' + targetTab);
+    if (targetPane) {
+      targetPane.classList.remove('hidden');
+      targetPane.classList.add('flex');
+    }
+
+    const activeBtn = document.getElementById('tab-btn-' + targetTab);
+    if (activeBtn) {
+      activeBtn.classList.remove('text-on-surface-variant', 'border-transparent');
+      activeBtn.classList.add('text-primary-container', 'border-primary-container');
+    }
+  }
+</script></main></div></body></html>

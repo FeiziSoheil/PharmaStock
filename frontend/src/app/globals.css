@@ -1,0 +1,244 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+
+@theme inline {
+  /* Breakpoints (literal CSS values required for @media rules) */
+  --breakpoint-tablet: 48rem;
+  --breakpoint-desktop: 80rem;
+
+  /* Font Families */
+  --font-sans: var(--ps-p-font-sans);
+  --font-latin: var(--ps-p-font-latin);
+  --font-mono: var(--ps-p-font-mono);
+
+  /* Typography Scale (Canonical Roles) */
+  --text-headline-xl: 2rem;
+  --text-headline-xl--line-height: 2.75rem;
+  --text-headline-xl--letter-spacing: -0.02em;
+  --text-headline-xl--font-weight: 700;
+
+  --text-headline-lg: 1.5rem;
+  --text-headline-lg--line-height: 2.25rem;
+  --text-headline-lg--letter-spacing: -0.01em;
+  --text-headline-lg--font-weight: 700;
+
+  --text-headline-md: 1.25rem;
+  --text-headline-md--line-height: 1.875rem;
+  --text-headline-md--font-weight: 600;
+
+  --text-headline-sm: 1.125rem;
+  --text-headline-sm--line-height: 1.75rem;
+  --text-headline-sm--font-weight: 600;
+
+  --text-title-md: 1rem;
+  --text-title-md--line-height: 1.5rem;
+  --text-title-md--font-weight: 600;
+
+  --text-title-sm: 0.9375rem;
+  --text-title-sm--line-height: 1.5rem;
+  --text-title-sm--font-weight: 600;
+
+  --text-body-lg: 1rem;
+  --text-body-lg--line-height: 1.625rem;
+  --text-body-lg--font-weight: 400;
+
+  --text-body-md: 0.875rem;
+  --text-body-md--line-height: 1.375rem;
+  --text-body-md--font-weight: 400;
+
+  --text-body-sm: 0.8125rem;
+  --text-body-sm--line-height: 1.25rem;
+  --text-body-sm--font-weight: 400;
+
+  --text-label-lg: 0.875rem;
+  --text-label-lg--line-height: 1.375rem;
+  --text-label-lg--font-weight: 600;
+
+  --text-label-md: 0.75rem;
+  --text-label-md--line-height: 1rem;
+  --text-label-md--font-weight: 500;
+
+  --text-label-sm: 0.6875rem;
+  --text-label-sm--line-height: 0.875rem;
+  --text-label-sm--font-weight: 500;
+
+  --text-kpi: 1.75rem;
+  --text-kpi--line-height: 2.125rem;
+  --text-kpi--font-weight: 700;
+
+  --text-data-tabular: 0.875rem;
+  --text-data-tabular--line-height: 1.25rem;
+  --text-data-tabular--font-weight: 500;
+
+  /* Semantic Colors */
+  --color-background: var(--ps-bg);
+  --color-foreground: var(--ps-text);
+  --color-surface: var(--ps-surface);
+  --color-surface-subtle: var(--ps-surface-subtle);
+  --color-surface-muted: var(--ps-surface-muted);
+  --color-surface-hover: var(--ps-surface-hover);
+  --color-surface-translucent: var(--ps-surface-translucent);
+  --color-backdrop: var(--ps-backdrop);
+
+  --color-card: var(--ps-surface);
+  --color-card-foreground: var(--ps-text);
+  --color-popover: var(--ps-surface);
+  --color-popover-foreground: var(--ps-text);
+
+  --color-text-primary: var(--ps-text);
+  --color-text-secondary: var(--ps-text-secondary);
+  --color-text-muted: var(--ps-text-muted);
+  --color-text-placeholder: var(--ps-text-placeholder);
+  --color-text-inverse: var(--ps-text-inverse);
+
+  --color-border: var(--ps-border);
+  --color-border-default: var(--ps-border);
+  --color-border-subtle: var(--ps-border-subtle);
+  --color-border-strong: var(--ps-border-strong);
+  --color-input: var(--ps-border);
+  --color-ring: var(--ps-focus-border);
+
+  --color-primary: var(--ps-primary);
+  --color-primary-hover: var(--ps-primary-hover);
+  --color-primary-active: var(--ps-primary-active);
+  --color-primary-tint: var(--ps-primary-tint);
+  --color-primary-border: var(--ps-primary-border);
+  --color-primary-foreground: var(--ps-primary-foreground);
+
+  --color-secondary: var(--ps-secondary);
+  --color-secondary-tint: var(--ps-secondary-tint);
+  --color-secondary-foreground: var(--ps-secondary-foreground);
+
+  --color-muted: var(--ps-surface-subtle);
+  --color-muted-foreground: var(--ps-text-secondary);
+  --color-accent: var(--ps-primary-tint);
+  --color-accent-foreground: var(--ps-primary);
+  --color-destructive: var(--ps-status-critical-fg);
+  --color-destructive-foreground: var(--ps-text-inverse);
+
+  /* Preserved Stitch Inventory Status Colors */
+  --color-status-valid-fg: var(--ps-status-valid-fg);
+  --color-status-valid-bg: var(--ps-status-valid-bg);
+  --color-status-valid-border: var(--ps-status-valid-border);
+
+  --color-status-warning-fg: var(--ps-status-warning-fg);
+  --color-status-warning-bg: var(--ps-status-warning-bg);
+  --color-status-warning-border: var(--ps-status-warning-border);
+
+  --color-status-expiring-fg: var(--ps-status-expiring-fg);
+  --color-status-expiring-bg: var(--ps-status-expiring-bg);
+  --color-status-expiring-border: var(--ps-status-expiring-border);
+
+  --color-status-critical-fg: var(--ps-status-critical-fg);
+  --color-status-critical-bg: var(--ps-status-critical-bg);
+  --color-status-critical-border: var(--ps-status-critical-border);
+
+  --color-status-info-fg: var(--ps-status-info-fg);
+  --color-status-info-bg: var(--ps-status-info-bg);
+  --color-status-info-border: var(--ps-status-info-border);
+
+  --color-status-neutral-fg: var(--ps-status-neutral-fg);
+  --color-status-neutral-bg: var(--ps-status-neutral-bg);
+  --color-status-neutral-border: var(--ps-status-neutral-border);
+
+  /* Spacing & Layout Dimensions */
+  --spacing-space-xs: var(--ps-space-xs);
+  --spacing-space-sm: var(--ps-space-sm);
+  --spacing-space-md: var(--ps-space-md);
+  --spacing-space-lg: var(--ps-space-lg);
+  --spacing-space-xl: var(--ps-space-xl);
+  --spacing-gutter: var(--ps-gutter);
+  --spacing-gutter-lg: var(--ps-gutter-lg);
+  --spacing-margin: var(--ps-margin);
+  --spacing-margin-mobile: var(--ps-margin-mobile);
+  --spacing-sidebar: var(--ps-sidebar-width);
+  --spacing-sidebar-collapsed: var(--ps-sidebar-collapsed-width);
+  --spacing-header: var(--ps-header-height);
+  --spacing-drawer: var(--ps-drawer-width);
+  --spacing-shell-inset: var(--ps-shell-inset);
+  --spacing-shell-inset-mobile: var(--ps-shell-inset-mobile);
+  --spacing-shell-gap: var(--ps-shell-gap);
+  --spacing-cell-x: var(--ps-cell-x);
+  --spacing-table-row: var(--ps-table-row-height);
+  --spacing-table-head: var(--ps-table-head-height);
+
+  /* Radii */
+  --radius-none: var(--ps-radius-none);
+  --radius-checkbox: var(--ps-radius-checkbox);
+  --radius-inner: var(--ps-radius-inner);
+  --radius-sm: var(--ps-radius-inner);
+  --radius-md: var(--ps-radius-md);
+  --radius-default: var(--ps-radius-default);
+  --radius-lg: var(--ps-radius-lg);
+  --radius-xl: var(--ps-radius-dialog);
+  --radius-dialog: var(--ps-radius-dialog);
+  --radius-panel: var(--ps-radius-panel);
+  --radius-badge: var(--ps-radius-badge);
+  --radius-full: var(--ps-radius-full);
+
+  /* Elevation (Restrained)
+   * Level 1 cards & tables: soft border only — never a drop shadow.
+   * Alias Tailwind `shadow-sm` → level-1 so accidental utilities stay border-first. */
+  --shadow-none: var(--ps-shadow-level-0);
+  --shadow-sm: var(--ps-shadow-level-1);
+  --shadow-card: var(--ps-shadow-level-1);
+  --shadow-shell: var(--ps-shadow-shell);
+  --shadow-dropdown: var(--ps-shadow-level-2);
+  --shadow-dialog: var(--ps-shadow-level-3);
+  --shadow-focus: var(--ps-shadow-focus);
+}
+
+@layer base {
+  html {
+    direction: rtl;
+    background-color: var(--ps-bg);
+    color: var(--ps-text);
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background-color: var(--ps-bg);
+    color: var(--ps-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-latin {
+  font-family: var(--font-latin);
+}
+
+.tabular-nums-data {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hide scrollbars; scroll still works via trackpad/touch. */
+.ps-hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.ps-hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.ps-focus-ring:focus-visible {
+  outline: none;
+  border-color: var(--ps-focus-border);
+  box-shadow: var(--ps-shadow-focus);
+}
+
+/* Floating AppShell canvas: base + mild gradient + subtle dot grid */
+.bg-shell {
+  background-color: var(--ps-bg);
+  background-image: var(--ps-bg-shell-pattern), var(--ps-bg-shell);
+  background-size: 18px 18px, auto;
+  background-attachment: fixed, fixed;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  user-select: none;
+  flex-shrink: 0;
+}

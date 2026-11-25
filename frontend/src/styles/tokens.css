@@ -1,0 +1,350 @@
+/*
+ * PharmaStock Centralized Design Tokens
+ * Layer 1: Primitive scales (--ps-p-*)
+ * Layer 2: Semantic tokens (--ps-*) scoped to light clinical theme & [data-theme]
+ * Layer 3: shadcn/ui CSS variable bridge
+ *
+ * NOTE: Architecture is theme-extensible via `[data-theme="<id>"]`.
+ * No dark-mode values are defined in this phase.
+ */
+
+:root {
+  color-scheme: light;
+
+  /* ========================================================================
+   * 1. PRIMITIVE TOKENS
+   * ======================================================================== */
+  --ps-p-white: #ffffff;
+  --ps-p-black: #000000;
+
+  /* Neutral Slate */
+  --ps-p-slate-50: #f8fafc;
+  --ps-p-slate-100: #f1f5f9;
+  --ps-p-slate-200: #e2e8f0;
+  --ps-p-slate-300: #cbd5e1;
+  --ps-p-slate-400: #94a3b8;
+  --ps-p-slate-500: #64748b;
+  --ps-p-slate-600: #475569;
+  --ps-p-slate-700: #334155;
+  --ps-p-slate-800: #1e293b;
+  --ps-p-slate-900: #0f172a;
+
+  /* Clinical Teal */
+  --ps-p-teal-50: #f0fdfa;
+  --ps-p-teal-100: #ccfbf1;
+  --ps-p-teal-200: #99f6e4;
+  --ps-p-teal-600: #0d9488;
+  --ps-p-teal-700: #0f766e;
+  --ps-p-teal-800: #115e59;
+  --ps-p-teal-900: #005c55;
+  --ps-p-teal-950: #00504a;
+  --ps-p-clinical-secondary: #216963;
+
+  /* Stitch Inventory Triage Status Palettes */
+  --ps-p-emerald-50: #ecfdf5;
+  --ps-p-emerald-200: #a7f3d0;
+  --ps-p-emerald-600: #059669;
+
+  --ps-p-amber-50: #fffbeb;
+  --ps-p-amber-200: #fde68a;
+  --ps-p-amber-600: #d97706;
+
+  --ps-p-orange-50: #fff7ed;
+  --ps-p-orange-100: #ffedd5;
+  --ps-p-orange-600: #ea580c;
+
+  --ps-p-rose-50: #fff1f2;
+  --ps-p-rose-200: #fecdd3;
+  --ps-p-rose-600: #e11d48;
+
+  --ps-p-sky-50: #eff6ff;
+  --ps-p-sky-200: #bfdbfe;
+  --ps-p-sky-600: #0284c7;
+
+  /* Alpha Primitives */
+  --ps-p-alpha-focus-12: rgba(15, 118, 110, 0.12);
+  --ps-p-alpha-shadow-04: rgba(15, 23, 42, 0.04);
+  --ps-p-alpha-shadow-05: rgba(15, 23, 42, 0.05);
+  --ps-p-alpha-shadow-12: rgba(15, 23, 42, 0.12);
+  --ps-p-alpha-backdrop-40: rgba(15, 23, 42, 0.4);
+  --ps-p-alpha-surface-95: rgba(255, 255, 255, 0.95);
+
+  /* Typography Primitives */
+  --ps-p-font-sans: "Vazirmatn Variable", "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --ps-p-font-latin: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --ps-p-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Spacing Primitives (8px grid with 4px micro step) */
+  --ps-p-space-0: 0px;
+  --ps-p-space-1: 0.25rem;
+  --ps-p-space-2: 0.5rem;
+  --ps-p-space-3: 0.75rem;
+  --ps-p-space-4: 1rem;
+  --ps-p-space-5: 1.25rem;
+  --ps-p-space-6: 1.5rem;
+  --ps-p-space-8: 2rem;
+  --ps-p-space-10: 2.5rem;
+  --ps-p-space-12: 3rem;
+  --ps-p-space-16: 4rem;
+
+  /* Radius Primitives */
+  --ps-p-radius-none: 0px;
+  --ps-p-radius-4: 4px;
+  --ps-p-radius-6: 6px;
+  --ps-p-radius-8: 8px;
+  --ps-p-radius-10: 10px;
+  --ps-p-radius-12: 12px;
+  --ps-p-radius-16: 16px;
+  --ps-p-radius-full: 9999px;
+}
+
+/* ==========================================================================
+ * 2. SEMANTIC TOKENS (Light Clinical Theme — Theme-Switchable Root)
+ * ========================================================================== */
+:root,
+[data-theme="clinical-light"] {
+  color-scheme: light;
+
+  /* Surfaces & Canvas */
+  --ps-bg: var(--ps-p-slate-50);
+  /* Floating shell canvas: mild slate→teal gradient + dot-grid overlay (via `.bg-shell`) */
+  --ps-bg-shell: linear-gradient(
+    160deg,
+    var(--ps-p-slate-50) 0%,
+    var(--ps-p-teal-50) 55%,
+    var(--ps-p-slate-50) 100%
+  );
+  --ps-bg-shell-pattern: radial-gradient(
+    rgba(15, 23, 42, 0.035) 1px,
+    transparent 1px
+  );
+  --ps-surface: var(--ps-p-white);
+  --ps-surface-subtle: var(--ps-p-slate-100);
+  --ps-surface-muted: var(--ps-p-slate-50);
+  --ps-surface-hover: var(--ps-p-teal-50);
+  --ps-surface-translucent: var(--ps-p-alpha-surface-95);
+  --ps-backdrop: var(--ps-p-alpha-backdrop-40);
+
+  /* Text Hierarchy */
+  --ps-text: var(--ps-p-slate-900);
+  --ps-text-secondary: var(--ps-p-slate-600);
+  --ps-text-muted: var(--ps-p-slate-500);
+  --ps-text-placeholder: var(--ps-p-slate-400);
+  --ps-text-inverse: var(--ps-p-white);
+
+  /* Borders & Dividers */
+  --ps-border: var(--ps-p-slate-200);
+  --ps-border-subtle: var(--ps-p-slate-100);
+  --ps-border-strong: var(--ps-p-slate-300);
+
+  /* Brand & Interactive */
+  --ps-primary: var(--ps-p-teal-700);
+  --ps-primary-hover: var(--ps-p-teal-800);
+  --ps-primary-active: var(--ps-p-teal-900);
+  --ps-primary-deep: var(--ps-p-teal-900);
+  --ps-primary-tint: var(--ps-p-teal-50);
+  --ps-primary-border: var(--ps-p-teal-200);
+  --ps-primary-foreground: var(--ps-p-white);
+
+  --ps-secondary: var(--ps-p-clinical-secondary);
+  --ps-secondary-tint: var(--ps-p-teal-100);
+  --ps-secondary-foreground: var(--ps-p-white);
+
+  /* Focus Ring */
+  --ps-focus-border: var(--ps-p-teal-700);
+  --ps-focus-ring: var(--ps-p-alpha-focus-12);
+  --ps-shadow-focus: 0 0 0 3px var(--ps-p-alpha-focus-12);
+
+  /* Semantic Inventory Triage Statuses (Preserved Stitch Values) */
+  --ps-status-valid-fg: var(--ps-p-emerald-600);
+  --ps-status-valid-bg: var(--ps-p-emerald-50);
+  --ps-status-valid-border: var(--ps-p-emerald-200);
+
+  --ps-status-warning-fg: var(--ps-p-amber-600);
+  --ps-status-warning-bg: var(--ps-p-amber-50);
+  --ps-status-warning-border: var(--ps-p-amber-200);
+
+  --ps-status-expiring-fg: var(--ps-p-orange-600);
+  --ps-status-expiring-bg: var(--ps-p-orange-50);
+  --ps-status-expiring-border: var(--ps-p-orange-100);
+
+  --ps-status-critical-fg: var(--ps-p-rose-600);
+  --ps-status-critical-bg: var(--ps-p-rose-50);
+  --ps-status-critical-border: var(--ps-p-rose-200);
+
+  --ps-status-info-fg: var(--ps-p-sky-600);
+  --ps-status-info-bg: var(--ps-p-sky-50);
+  --ps-status-info-border: var(--ps-p-sky-200);
+
+  --ps-status-neutral-fg: var(--ps-p-slate-600);
+  --ps-status-neutral-bg: var(--ps-p-slate-100);
+  --ps-status-neutral-border: var(--ps-p-slate-200);
+
+  /* Spacing Semantic Aliases */
+  --ps-space-xs: var(--ps-p-space-1);
+  --ps-space-sm: var(--ps-p-space-2);
+  --ps-space-md: var(--ps-p-space-4);
+  --ps-space-lg: var(--ps-p-space-6);
+  --ps-space-xl: var(--ps-p-space-8);
+  --ps-gutter: var(--ps-p-space-4);
+  --ps-gutter-lg: var(--ps-p-space-6);
+  --ps-margin: var(--ps-p-space-6);
+  --ps-margin-mobile: var(--ps-p-space-4);
+  /* Tabular density per DESIGN.md: 10px vertical cell padding
+     (space-xs + 2px optical allowance), 16px horizontal, row capped at 48px */
+  --ps-cell-y: calc(var(--ps-p-space-2) + 2px);
+  --ps-cell-x: var(--ps-p-space-4);
+  --ps-table-row-height: 48px;
+  --ps-table-head-height: 44px;
+
+  /* Radius Semantic Tokens */
+  --ps-radius-none: var(--ps-p-radius-none);
+  --ps-radius-checkbox: var(--ps-p-radius-4);
+  --ps-radius-inner: var(--ps-p-radius-6);
+  --ps-radius-md: var(--ps-p-radius-8);
+  --ps-radius-default: var(--ps-p-radius-10);
+  --ps-radius-lg: var(--ps-p-radius-12);
+  --ps-radius-dialog: var(--ps-p-radius-16);
+  --ps-radius-panel: var(--ps-p-radius-16);
+  --ps-radius-badge: var(--ps-p-radius-full);
+  --ps-radius-full: var(--ps-p-radius-full);
+
+  /* Elevation (Restrained, Soft-Border Cards & Tables)
+   * Level 1 = cards/sections/tables: soft border via --ps-border, shadow none.
+   * Sticky table headers: soft bottom rule (--ps-border-strong), not shadow.
+   * Level 2/3 = floating overlays only (dropdown / dialog). */
+  --ps-shadow-level-0: none;
+  --ps-shadow-level-1: none;
+  --ps-shadow-shell: 0 1px 8px var(--ps-p-alpha-shadow-04);
+  --ps-shadow-level-2: 0 4px 12px var(--ps-p-alpha-shadow-05);
+  --ps-shadow-level-3: 0 12px 32px var(--ps-p-alpha-shadow-12);
+
+  /* Layout & Breakpoints */
+  --ps-sidebar-width: 260px;
+  --ps-sidebar-collapsed-width: 72px;
+  --ps-header-height: 64px;
+  --ps-drawer-width: 560px;
+  --ps-confirm-dialog-width: 420px;
+  --ps-shell-inset: 16px;
+  --ps-shell-inset-mobile: 12px;
+  --ps-shell-gap: 16px;
+  --ps-breakpoint-tablet: 768px;
+  --ps-breakpoint-desktop: 1280px;
+
+  /* Z-Index Scale */
+  --ps-z-base: 0;
+  --ps-z-sticky: 20;
+  --ps-z-header: 40;
+  --ps-z-sidebar: 50;
+  --ps-z-dropdown: 60;
+  --ps-z-drawer: 70;
+  --ps-z-modal: 80;
+  --ps-z-toast: 90;
+
+  /* ========================================================================
+   * 3. SHADCN/UI VARIABLE BRIDGE
+   * ======================================================================== */
+  --background: var(--ps-bg);
+  --foreground: var(--ps-text);
+  --card: var(--ps-surface);
+  --card-foreground: var(--ps-text);
+  --popover: var(--ps-surface);
+  --popover-foreground: var(--ps-text);
+  --primary: var(--ps-primary);
+  --primary-foreground: var(--ps-primary-foreground);
+  --secondary: var(--ps-surface-subtle);
+  --secondary-foreground: var(--ps-text);
+  --muted: var(--ps-surface-subtle);
+  --muted-foreground: var(--ps-text-secondary);
+  --accent: var(--ps-primary-tint);
+  --accent-foreground: var(--ps-primary);
+  --destructive: var(--ps-status-critical-fg);
+  --destructive-foreground: var(--ps-text-inverse);
+  --border: var(--ps-border);
+  --input: var(--ps-border);
+  --ring: var(--ps-focus-border);
+  --radius: var(--ps-radius-default);
+}
+
+/* ==========================================================================
+ * 4. THEME & APPEARANCE EXTENSIONS (Controlled & Safe)
+ * ========================================================================== */
+
+/* Hospital Cobalt Theme (High contrast clinical blue) */
+[data-theme="hospital-blue"] {
+  --ps-primary: #1d4ed8;
+  --ps-primary-hover: #1e40af;
+  --ps-primary-active: #172554;
+  --ps-primary-deep: #172554;
+  --ps-primary-tint: #eff6ff;
+  --ps-primary-border: #bfdbfe;
+  --ps-secondary: #1e3a8a;
+  --ps-secondary-tint: #dbeafe;
+  --ps-focus-border: #1d4ed8;
+  --ps-focus-ring: rgba(29, 78, 216, 0.15);
+  --ps-shadow-focus: 0 0 0 3px rgba(29, 78, 216, 0.15);
+}
+
+/* Clinical Slate Dark Mode */
+[data-theme="clinical-dark"] {
+  color-scheme: dark;
+  --ps-bg: #090d16;
+  --ps-bg-shell: linear-gradient(160deg, #090d16 0%, #0d1726 55%, #090d16 100%);
+  --ps-bg-shell-pattern: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  --ps-surface: #111827;
+  --ps-surface-subtle: #1f2937;
+  --ps-surface-muted: #162032;
+  --ps-surface-hover: #1e293b;
+  --ps-surface-translucent: rgba(17, 24, 39, 0.95);
+  --ps-backdrop: rgba(0, 0, 0, 0.65);
+
+  --ps-text: #f9fafb;
+  --ps-text-secondary: #cbd5e1;
+  --ps-text-muted: #94a3b8;
+  --ps-text-placeholder: #64748b;
+  --ps-text-inverse: #0f172a;
+
+  --ps-border: #1f2937;
+  --ps-border-subtle: #162032;
+  --ps-border-strong: #374151;
+
+  --ps-primary: #14b8a6;
+  --ps-primary-hover: #2dd4bf;
+  --ps-primary-active: #5eead4;
+  --ps-primary-deep: #0f766e;
+  --ps-primary-tint: rgba(20, 184, 166, 0.12);
+  --ps-primary-border: #134e4a;
+  --ps-primary-foreground: #042f2e;
+
+  --ps-secondary: #0d9488;
+  --ps-secondary-tint: rgba(13, 148, 136, 0.15);
+  --ps-secondary-foreground: #f9fafb;
+
+  --ps-status-valid-bg: rgba(5, 150, 105, 0.16);
+  --ps-status-warning-bg: rgba(217, 119, 6, 0.16);
+  --ps-status-critical-bg: rgba(225, 29, 72, 0.16);
+}
+
+/* UI Density Scales */
+[data-density="compact"] {
+  --ps-table-row-height: 38px;
+  --ps-table-head-height: 36px;
+  --ps-cell-x: 0.625rem;
+  --ps-cell-y: 0.25rem;
+}
+
+[data-density="comfortable"] {
+  --ps-table-row-height: 48px;
+  --ps-table-head-height: 44px;
+  --ps-cell-x: 1rem;
+  --ps-cell-y: 0.5rem;
+}
+
+/* Font Scales */
+[data-font-size="large"] {
+  font-size: 106.25%;
+}
+
+[data-font-size="standard"] {
+  font-size: 100%;
+}

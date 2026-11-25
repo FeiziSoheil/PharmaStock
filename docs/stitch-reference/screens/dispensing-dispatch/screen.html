@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;font-family:'Vazirmatn',sans-serif;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed-dim":"#68dba9","secondary":"#216963","surface-container-lowest":"#ffffff","surface-container":"#eceef0","on-tertiary-container":"#99ffce","error":"#ba1a1a","on-error":"#ffffff","tertiary":"#005e40","secondary-fixed-dim":"#8fd3cc","on-primary-fixed-variant":"#00504a","inverse-primary":"#80d5cb","on-surface-variant":"#3e4947","primary-container":"#0f766e","surface-tint":"#006a63","secondary-fixed":"#abefe8","tertiary-fixed":"#85f8c4","secondary-container":"#a8ece5","on-secondary-fixed":"#00201e","surface-bright":"#f7f9fb","tertiary-container":"#007954","primary-fixed-dim":"#80d5cb","on-secondary-container":"#266d68","on-surface":"#191c1e","surface":"#f7f9fb","outline":"#6e7977","primary-fixed":"#9cf2e8","outline-variant":"#bdc9c6","on-tertiary-fixed-variant":"#005137","surface-variant":"#e0e3e5","on-primary-fixed":"#00201d","surface-container-highest":"#e0e3e5","surface-dim":"#d8dadc","primary":"#005c55","inverse-on-surface":"#eff1f3","on-secondary-fixed-variant":"#00504b","surface-container-low":"#f2f4f6","error-container":"#ffdad6","on-tertiary-fixed":"#002114","surface-container-high":"#e6e8ea","inverse-surface":"#2d3133","on-secondary":"#ffffff","on-primary":"#ffffff","background":"#f7f9fb","on-error-container":"#93000a","on-tertiary":"#ffffff","on-primary-container":"#a3faef","on-background":"#191c1e"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","gutter":"1rem","space-lg":"1.5rem","gutter-lg":"1.5rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem","margin":"1.5rem","space-xl":"2rem"},"fontFamily":{"headline-lg":["Vazirmatn","sans-serif"],"headline-md":["Vazirmatn","sans-serif"],"headline-xl":["Vazirmatn","sans-serif"],"headline-sm":["Vazirmatn","sans-serif"],"body-sm":["Vazirmatn","sans-serif"],"label-lg":["Vazirmatn","sans-serif"],"label-sm":["Vazirmatn","sans-serif"],"body-md":["Vazirmatn","sans-serif"],"body-lg":["Vazirmatn","sans-serif"],"title-md":["Vazirmatn","sans-serif"],"label-md":["Vazirmatn","sans-serif"],"data-tabular":["Vazirmatn","sans-serif"]},"fontSize":{"headline-lg":["1.5rem",{"lineHeight":"2.25rem","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-md":["1.25rem",{"lineHeight":"1.875rem","fontWeight":"600"}],"headline-xl":["2rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"600"}],"body-sm":["0.75rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"600"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"body-lg":["1rem",{"lineHeight":"1.625rem","fontWeight":"400"}],"title-md":["1rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"label-md":["0.75rem",{"lineHeight":"1rem","fontWeight":"500"}],"data-tabular":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"500"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface"><aside class="fixed right-0 top-0 h-full w-[260px] bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="p-space-md"><div class="flex items-center gap-space-sm pb-space-md border-b border-surface-container-highest"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[24px]">local_pharmacy</span></div><div><div class="font-headline-sm text-headline-sm text-primary">انبار دارو</div><div class="font-label-sm text-label-sm text-on-surface-variant">سامانه جامع موجودی داروخانه</div></div></div><nav class="mt-space-md space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-xl shadow-sm"><div class="font-label-sm text-label-sm text-outline px-space-sm pt-space-xs pb-space-xs uppercase">بخش اصلی</div><a class="block px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="dashboard" href="#">داشبورد و آمار کلان</a><a class="block px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="inventory" href="#">لیست و موجودی داروها</a><a class="block px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="alerts" href="#">هشدارهای انقضا و کسری</a><div class="font-label-sm text-label-sm text-primary px-space-sm pt-space-md pb-space-xs uppercase font-bold flex items-center justify-between"><span>عملیات انبارداری</span><span class="w-1.5 h-1.5 rounded-full bg-primary"></span></div><a class="block px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="receipts" href="#">ورود و رسید فاکتور</a><a aria-current="page" class="block px-space-sm py-space-sm transition-all bg-primary-container text-on-primary font-bold rounded-xl shadow-sm" data-path="outbound" href="#">حواله خروج و فروش</a><a class="block px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="audit" href="#">شمارش و انبارگردانی</a><div class="font-label-sm text-label-sm text-outline px-space-sm pt-space-md pb-space-xs uppercase">گزارش‌ها و تنظیمات</div><a class="block px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="reports" href="#">گزارش‌های دوره‌ای و مالی</a><a class="block px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="branches" href="#">مدیریت شعب و انبارها</a><a class="block px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="settings" href="#">تنظیمات سامانه</a></nav></div><div class="p-space-md border-t border-surface-container-highest bg-surface-bright"><div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-lowest border border-surface-container-highest"><div class="flex items-center gap-space-xs"><span class="w-2.5 h-2.5 rounded-full bg-tertiary-container animate-pulse"></span><div><div class="font-label-md text-label-md text-on-surface">شعبه مرکزی</div><div class="font-label-sm text-label-sm text-on-surface-variant">فعال و آنلاین</div></div></div><button class="text-primary hover:text-on-surface transition-colors p-1"><span class="material-symbols-outlined text-[18px]">swap_horiz</span></button></div><div class="flex items-center justify-between mt-space-sm px-space-xs"><span class="font-label-sm text-label-sm text-outline">سیستم لجستیک دارویی</span><span class="font-data-tabular text-data-tabular text-outline">نسخه ۲.۴.۰</span></div></div></aside><div class="pr-[260px]"><header class="fixed top-0 right-[260px] left-0 h-16 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-xl border border-surface-container-highest"><span class="material-symbols-outlined text-primary text-[20px]">local_pharmacy</span><span class="font-label-lg text-label-lg text-on-surface">داروخانه دکتر حسینی (مرکزی)</span><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div><div class="relative w-96"><span class="material-symbols-outlined absolute right-space-sm top-2.5 text-outline text-[20px]">search</span><input class="w-full h-10 pr-10 pl-16 rounded-xl bg-surface-bright border border-surface-container-highest font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:border-primary" placeholder="جستجوی نام دارو، کد ژنریک، بارکد یا شناسه IRC..." type="text"/><span class="absolute left-space-xs top-2 px-1.5 py-0.5 rounded bg-surface-container text-outline font-label-sm text-label-sm">Ctrl+K</span></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary px-space-md h-10 rounded-xl font-label-lg text-label-lg transition-colors"><span class="material-symbols-outlined text-[20px]">add_circle</span><span>ثبت داروی جدید</span></button><button class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-label-sm flex items-center justify-center">۴</span></button><div class="flex items-center gap-space-sm pl-space-xs border-r border-surface-container-highest pr-space-md"><div class="text-left"><div class="font-label-lg text-label-lg text-on-surface">دکتر رضایی</div><div class="font-label-sm text-label-sm text-primary">مسئول فنی داروخانه</div></div><img alt="دکتر رضایی - مسئول فنی داروخانه" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrAE8Vz1cvoPdg9e9JyLvxyzuEgt4Zk_ccaGJDQoZ41r3IfozLnxa-dB5rCCgiOlvD9JkrfLNig6_fM0iBmy_WbfFWiUIko7VAj9lTBOT40v-riGSDWdHplafFGB-n7K7cU5aXrJDCHRrgJhloCaxWbSdBlX50IRzK0iOIeXmjV8KjH50895j5F7XMKZhN4fBsJ65J437oxpvwR4NC2BbmfZXHQVeo4iRwPLoJNCBbL6"/></div></div></header><main class="w-full pt-16 bg-surface min-h-screen px-gutter-lg py-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- TOP WORKSPACE BANNER & PROTOCOL STATUS -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">output_circle</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-md text-headline-md text-on-surface">میز کار نسخه‌پیچی و صدور حواله خروج کالا</span>
+<span class="font-data-tabular text-data-tabular bg-surface-container px-2 py-0.5 rounded-full text-on-surface-variant">حواله #OUT-۴۰۳۰۸</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">پردازش اقلام تجویزی، تایید هوشمند انبارکاردکس و پایش پروتکل‌های خاص دارویی</p>
+</div>
+</div>
+<!-- FEFO Status Badge -->
+<div class="flex items-center gap-space-sm bg-secondary-container/40 px-space-md py-space-sm rounded-xl">
+<div class="w-3 h-3 rounded-full bg-primary animate-pulse"></div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-secondary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+          پروتکل تخصیص خودکار FEFO فعال است
+        </span>
+<span class="font-label-sm text-label-sm text-on-secondary-container/80">نخستین انقضا، نخستین خروج (First Expiry, First Out)</span>
+</div>
+</div>
+</div>
+<!-- SCAN & QUICK ADD TOOLBAR -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Barcode UID Scanner Input -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">qr_code_scanner</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">اسکن بارکد دوبعدی / UID / GTIN</label>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary inline-block"></span>
+            اسکنر آماده‌به‌کار
+          </span>
+</div>
+<div class="relative">
+<input class="w-full h-10 pr-3 pl-16 rounded-lg bg-surface-container-low font-data-tabular text-data-tabular text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_rgba(15,118,110,0.2)] transition-all" id="barcodeScannerInput" placeholder="بارکد رهگیری اصالت دارو (تی‌تک) را اسکن نمایید..." type="text"/>
+<button class="absolute left-1.5 top-1.5 px-2 py-1 bg-surface-container rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">barcode</span>
+<span>ورود</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Generic & Brand Search Input -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">medication</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">جستجوی سریع دارو بر اساس نام ژنریک یا تجاری</label>
+<span class="font-label-sm text-label-sm text-outline">کلید میانبر F۲</span>
+</div>
+<div class="relative">
+<input class="w-full h-10 pr-9 pl-24 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_rgba(15,118,110,0.2)] transition-all" placeholder="مثال: متفورمین، آتورواستاتین، لانتوس، کلونازپام..." type="text"/>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-outline text-[20px]">search</span>
+<button class="absolute left-1.5 top-1.5 h-7 px-3 bg-primary-container text-on-primary rounded font-label-sm text-label-sm hover:bg-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">add</span>
+            افزودن به نسخه
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- CRITICAL FEFO EDUCATIONAL & NOTIFICATION BANNER -->
+<div class="bg-secondary-container/25 p-space-md rounded-xl flex items-start gap-space-md">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-space-sm">
+<span class="font-title-md text-title-md text-on-secondary-container font-bold">قانون مدیریت زنجیره انبارش دارویی (FEFO Enforcement)</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">الزام استاندارد GSP</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1 leading-relaxed">
+        سامانه به صورت هوشمند و خودکار، سری ساختی با نزدیک‌ترین تاریخ انقضا (FEFO) را جهت کسر از موجودی انبار تخصیص می‌دهد تا از هدررفت و منقضی شدن فرآورده‌ها در قفسه‌ها پیشگیری شود. تغییر دستی بچ فقط با ثبت گزارش دلیل فنی مجاز است.
+      </p>
+</div>
+<div class="hidden xl:flex items-center gap-space-xs text-secondary px-3 py-1.5 bg-surface-container-lowest rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-[18px]">nest_clock_farsight_analog</span>
+<span class="font-label-sm text-label-sm">میانگین ماندگاری بچ‌های فعال: ۷.۵ ماه</span>
+</div>
+</div>
+<!-- MAIN WORKSPACE LAYOUT: 8 COLS DISPENSING LIST + 4 COLS SUMMARY -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT: ITEMS LIST & CLINICAL VALIDATIONS (8 COLS) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- List Header & Actions -->
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">اقلام ثبت شده در این حواله</span>
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary font-data-tabular text-data-tabular flex items-center justify-center text-xs">۳</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-2 py-1 rounded hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">sort</span>
+            مرتب‌سازی بر اساس موقعیت قفسه
+          </button>
+<button class="flex items-center gap-1 text-error hover:bg-error-container/30 px-2 py-1 rounded font-label-md text-label-md transition-colors">
+<span class="material-symbols-outlined text-[18px]">delete_sweep</span>
+            پاک‌سازی همه
+          </button>
+</div>
+</div>
+<!-- ITEM 1: STANDARD MEDICATION (Metformin 500) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[24px]">pill</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="font-title-md text-title-md text-on-surface">قرص متفورمین ۵۰۰ میلی‌گرم</span>
+<span class="font-label-sm text-label-sm text-outline">Metformin 500mg Tab</span>
+<span class="bg-surface-container-low text-on-surface-variant px-2 py-0.5 rounded font-data-tabular text-label-sm">IRC: 1228490019</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">شرکت داروسازی داروپخش • بسته ۱۰۰ عددی</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 bg-secondary-container text-on-secondary-container px-2.5 py-1 rounded-full font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+              تخصیص هوشمند بر مبنای FEFO
+            </span>
+</div>
+</div>
+<!-- FEFO Details Bar -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-sm bg-surface-container-low p-space-sm rounded-lg font-body-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">بچ تخصیص‌یافته انبار:</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">M9041</span>
+<span class="material-symbols-outlined text-primary text-[16px]">priority_high</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">اولین اولویت خروج</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">تاریخ انقضا:</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface mt-0.5">۱۴۰۴/۰۲/۱۵ (۵ ماه باقیمانده)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">موقعیت دقیق انبارش:</span>
+<div class="flex items-center gap-1 mt-0.5 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-outline">warehouse</span>
+<span>پیشخوان &gt; استند ۱ &gt; ردیف ۳</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm">
+<div class="text-left">
+<span class="font-label-sm text-label-sm text-outline block">تعداد درخواستی</span>
+<div class="flex items-center gap-2 mt-0.5">
+<button class="w-6 h-6 rounded bg-surface-container hover:bg-surface-container-highest flex items-center justify-center font-bold text-on-surface text-sm">-</button>
+<span class="font-data-tabular text-headline-sm text-primary font-bold px-1">۲</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">بسته</span>
+<button class="w-6 h-6 rounded bg-surface-container hover:bg-surface-container-highest flex items-center justify-center font-bold text-on-surface text-sm">+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm text-outline pt-1">
+<div class="flex items-center gap-space-md">
+<span>موجودی این بچ در انبار: <strong class="text-on-surface font-data-tabular">۴۸ بسته</strong></span>
+<span>قیمت مصرف‌کننده: <strong class="text-on-surface font-data-tabular">۳۲۰,۰۰۰ ریال</strong></span>
+</div>
+<button class="text-primary hover:underline font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+            تغییر دستی بچ (نیازمند مجوز)
+          </button>
+</div>
+</div>
+<!-- ITEM 2: COLD-CHAIN MEDICATION (Insulin Glargine / Lantus) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/40 flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[24px]">ac_unit</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="font-title-md text-title-md text-on-surface">قلم انسولین لانتوس (گلارجین) ۱۰۰ واحد</span>
+<span class="font-label-sm text-label-sm text-outline">Lantus Solostar 100 U/ml</span>
+<span class="bg-primary/10 text-primary px-2 py-0.5 rounded font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">thermostat</span>
+                  داروی زنجیره سرد (۲ الی ۸ درجه)
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">شرکت دارویی سانوفی • جعبه حاوی ۵ عدد قلم آماده تزریق</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 bg-secondary-container text-on-secondary-container px-2.5 py-1 rounded-full font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+              تخصیص هوشمند بر مبنای FEFO
+            </span>
+</div>
+</div>
+<!-- FEFO & Cold-Chain Details -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-sm bg-surface-container-low p-space-sm rounded-lg font-body-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">بچ تخصیص‌یافته انبار:</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">LNT-8422</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">نزدیک‌ترین انقضا</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">تاریخ انقضا:</span>
+<span class="font-data-tabular text-data-tabular font-bold text-error mt-0.5">۱۴۰۳/۰۹/۲۲ (۴۲ روز باقیمانده)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">موقعیت نگهداری و دما:</span>
+<div class="flex items-center gap-1 mt-0.5 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary">kitchen</span>
+<span>یخچال اصلی داروخانه &gt; طبقه ۲</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm">
+<div class="text-left">
+<span class="font-label-sm text-label-sm text-outline block">تعداد درخواستی</span>
+<div class="flex items-center gap-2 mt-0.5">
+<button class="w-6 h-6 rounded bg-surface-container hover:bg-surface-container-highest flex items-center justify-center font-bold text-on-surface text-sm">-</button>
+<span class="font-data-tabular text-headline-sm text-primary font-bold px-1">۱</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">بسته</span>
+<button class="w-6 h-6 rounded bg-surface-container hover:bg-surface-container-highest flex items-center justify-center font-bold text-on-surface text-sm">+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm text-outline pt-1">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1 text-primary">
+<span class="w-2 h-2 rounded-full bg-primary inline-block"></span>
+              پایش آنلاین دما: <strong class="font-data-tabular">+۴.۱ درجه سانتی‌گراد (تایید)</strong>
+</span>
+<span>بهای مصوب: <strong class="text-on-surface font-data-tabular">۲,۴۵۰,۰۰۰ ریال</strong></span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">بسته‌بندی دارای پوشش عایق برودتی</span>
+</div>
+</div>
+<!-- ITEM 3: CONTROLLED & NARCOTIC SUBSTANCE (Morphine/Clonazepam) WITH MANDATORY COMPLIANCE FORM -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<!-- Colored Warning Header Bar (Pure Background Shift, No Border) -->
+<div class="bg-error/10 -mx-space-md -mt-space-md px-space-md py-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-error text-[24px]">gavel</span>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-error">داروی تحت کنترل قانونی و مخدر (ردیف الف)</span>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm">پروتکل ویژه نظارت دارویی</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-error bg-surface-container-lowest/80 px-2.5 py-1 rounded-lg">
+            الزام تایید مستقیم مسئول فنی
+          </span>
+</div>
+<!-- Drug Title and FEFO Batch -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-error/10 text-error flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[24px]">vaccines</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="font-title-md text-title-md text-on-surface">آمپول مرفین سولفات ۱۰ میلی‌گرم / ۱ میلی‌لیتر</span>
+<span class="font-label-sm text-label-sm text-outline">Morphine Sulfate Inj</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">شرکت داروسازی اکسیر • ثبت دقیق در دفتر رسمی مخدر الزامی است</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="text-left">
+<span class="font-label-sm text-label-sm text-outline block">تعداد تخصیصی</span>
+<span class="font-data-tabular text-headline-sm text-error font-bold px-1">۳</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">آمپول</span>
+</div>
+</div>
+</div>
+<!-- Batch & Safe Storage Info -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm bg-surface-container-low p-space-sm rounded-lg font-body-sm">
+<div>
+<span class="font-label-sm text-label-sm text-outline">سری ساخت FEFO:</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface block mt-0.5">MRP-2023-B8</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline">انقضا:</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface block mt-0.5">۱۴۰۴/۰۶/۱۰</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline">محل استقرار:</span>
+<span class="font-label-md text-label-md text-on-surface block mt-0.5 font-bold">گاوصندوق مخدر مرکزی &gt; طبقه A</span>
+</div>
+</div>
+<!-- MANDATORY CLINICAL & COMPLIANCE REGISTRATION FORM -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-1.5 text-on-surface font-title-md text-title-md">
+<span class="material-symbols-outlined text-[20px] text-error">assignment_late</span>
+<span>فرم ثبت الزامات قانونی و بالینی تحویل داروی تحت کنترل</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">استعلام مستقیم از سامانه TTAC و سازمان غذا و دارو</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">نام و نام‌خانوادگی پزشک معالج *</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest font-body-sm text-body-sm text-on-surface focus:outline-none focus:shadow-[0_0_0_2px_rgba(0,92,85,0.2)]" type="text" value="دکتر محمدرضا صابری (فوق‌تخصص آنکولوژی)"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">شماره نظام پزشکی پزشک *</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest font-data-tabular text-data-tabular text-on-surface focus:outline-none focus:shadow-[0_0_0_2px_rgba(0,92,85,0.2)] text-left" type="text" value="۴۸۹۲۱-م"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">کد ملی دریافت‌کننده / بیمار *</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest font-data-tabular text-data-tabular text-on-surface focus:outline-none focus:shadow-[0_0_0_2px_rgba(0,92,85,0.2)] text-left" type="text" value="۰۰۷۸۹۴۵۲۳۱"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">شماره پیگیری نسخه الکترونیک (سپاس / تامین اجتماعی) *</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest font-data-tabular text-data-tabular text-on-surface focus:outline-none focus:shadow-[0_0_0_2px_rgba(0,92,85,0.2)] text-left" type="text" value="EP-98210375"/>
+</div>
+</div>
+<!-- Responsible Pharmacist Digital Sign-off Verification -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-5 h-5 rounded text-primary focus:ring-0 cursor-pointer accent-primary" id="pharmacistApproval" type="checkbox"/>
+<label class="font-label-lg text-label-lg text-on-surface cursor-pointer select-none" for="pharmacistApproval">
+                اینجانب <strong>دکتر رضایی (مسئول فنی داروخانه)</strong> اصالت نسخه و ضرورت بالینی را احراز نموده و تحویل را تایید می‌نمایم.
+              </label>
+</div>
+<div class="flex items-center gap-2 bg-secondary-container/30 px-3 py-1.5 rounded-lg shrink-0">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container">گواهی امضای دیجیتال فعال</span>
+</div>
+</div>
+</div>
+</div>
+<!-- INVENTORY CARDEX & WAREHOUSE DISPATCH NOTE -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">sync_alt</span>
+<span>با ثبت نهایی این حواله، کاردکس انبار به میزان اقلام فوق به صورت آنی به‌روزرسانی شده و لاگ سیستمی ایجاد می‌گردد.</span>
+</div>
+<span class="font-data-tabular text-data-tabular">کد مرجع انبار: WH-MAIN-۰۴</span>
+</div>
+</div>
+<!-- RIGHT: SUMMARY PANEL & DISPATCH ACTIONS (4 COLS) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md sticky top-20">
+<!-- Patient & Prescription Metadata Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-2">
+<span class="font-title-md text-title-md text-on-surface font-bold">اطلاعات بیمار و نسخه</span>
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+</div>
+<div class="space-y-space-xs font-body-sm">
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">نام بیمار:</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">پروانه سلیمانی</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">شناسه ملی بیمار:</span>
+<span class="font-data-tabular text-data-tabular text-on-surface">۰۰۷۸۹۴۵۲۳۱</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">سازمان بیمه‌گر:</span>
+<span class="font-label-md text-label-md text-primary bg-primary/10 px-2 py-0.5 rounded">بیمه خدمات درمانی سلامت</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">نوع پرونده:</span>
+<span class="text-on-surface">بیماران خاص / آنکولوژی</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">شناسه رهگیری نسخه:</span>
+<span class="font-data-tabular text-data-tabular text-on-surface">RX-8991204</span>
+</div>
+</div>
+</div>
+<!-- Outbound Order Summary & Triage Breakdown -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">خلاصه حواله خروج</span>
+<span class="font-label-sm text-label-sm text-outline">۳ قلم کالا</span>
+</div>
+<!-- Drug Type Triage Counters -->
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="bg-surface-container-low p-2 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">کل اقلام</span>
+<span class="font-data-tabular text-headline-sm font-bold text-on-surface">۳</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">عادی / یخچالی</span>
+<span class="font-data-tabular text-headline-sm font-bold text-secondary">۲</span>
+</div>
+<div class="bg-error/10 p-2 rounded-lg">
+<span class="font-label-sm text-label-sm text-error block">تحت کنترل</span>
+<span class="font-data-tabular text-headline-sm font-bold text-error">۱</span>
+</div>
+</div>
+<!-- Financial Summary Breakdown -->
+<div class="space-y-space-xs font-body-sm pt-2">
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">جمع بهای مصوب داروها:</span>
+<span class="font-data-tabular text-data-tabular text-on-surface">۳,۸۴۰,۰۰۰ ریال</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">تعهد سازمان بیمه‌گر (۷۰٪):</span>
+<span class="font-data-tabular text-data-tabular text-primary font-medium">- ۲,۶۸۸,۰۰۰ ریال</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">حق فنی و نسخه‌پیچی:</span>
+<span class="font-data-tabular text-data-tabular text-on-surface">۱۸۰,۰۰۰ ریال</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg flex justify-between items-center mt-2">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">سهم پرداختی بیمار (فرانشیز):</span>
+<div class="text-left">
+<span class="font-data-tabular text-headline-sm text-primary font-bold">۱,۳۳۲,۰۰۰</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">ریال</span>
+</div>
+</div>
+</div>
+<!-- Responsible Pharmacist Verification Status Card -->
+<div class="bg-secondary-container/20 p-space-sm rounded-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">تایید مسئول فنی ثبت شد</span>
+<span class="font-label-sm text-label-sm text-primary">تایید شده توسط دکتر رضایی (کد نظام: ۳۲۴۰)</span>
+</div>
+</div>
+<!-- Primary Action Buttons -->
+<div class="flex flex-col gap-space-sm pt-2">
+<button class="w-full h-12 bg-primary-container hover:bg-primary text-on-primary rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-md transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-[22px]">assignment_turned_in</span>
+<span>تایید و صدور حواله خروج قطعی از انبار و کسر کاردکس</span>
+</button>
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="h-10 bg-surface-container hover:bg-surface-container-high text-on-surface rounded-xl font-label-md text-label-md flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>چاپ فیش بیمار</span>
+</button>
+<button class="h-10 bg-surface-container hover:bg-surface-container-high text-on-surface rounded-xl font-label-md text-label-md flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>حواله انبارداری</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Warehouse Audit Metric Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">inventory</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface">میزان انطباق خروج با FEFO امروز</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">۱۴۲ حواله صادر شده بدون انحراف</div>
+</div>
+</div>
+<span class="font-data-tabular text-headline-sm font-bold text-primary">۹۹.۴٪</span>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
